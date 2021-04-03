@@ -30,10 +30,9 @@ int SBT_Designate_Process_Temperature(SBT_s_pump_state_input* p_pump_state_input
 
 
 int SBT_Temperature_Analysis(SBT_s_pump_state_input* p_pump_state_input, int16_t process_temperature, uint8_t pump_pin_state){
-	// FIX ME !@$$@!!@$!@!@!@!@$!@!@$!@!@!
 	if(process_temperature < 0) {
 		return TEMPERATURE_READ_ERROR;
-	} // <- it's me, condition!
+	} 
 	else{
 		if(process_temperature >= MAX_OVER_TEMP) {
 			return OVERHEAT;
@@ -59,8 +58,6 @@ int SBT_Flow_Analysis(int16_t input_flow, int16_t output_flow, uint8_t pump_pin_
 
 
 void SBT_System_Failure(SBT_e_pump_alarm error_id){
-	// SEND TO CAN
-	// It gets flag about system's condition and fatal errors
 	uint8_t msg[8];
 	switch(error_id){
 		case DRY_RUNNING:{
@@ -106,9 +103,6 @@ void StartTaskPumpControll(void const * argument){
 	int16_t process_temperature = 0; // Temperature handed to control function
 	uint8_t loop_ctr = 0; // Counter for flow analysis purpose
 	osEvent evt;
- 
-	TIM8_CH2_ENGINE_PUMP_GPIO_Port->MODER &= ~GPIO_MODER_MODE7_1;
-	TIM8_CH2_ENGINE_PUMP_GPIO_Port->MODER |= GPIO_MODER_MODE7_0;
 
 	while(1){
 		// Get data from queue
