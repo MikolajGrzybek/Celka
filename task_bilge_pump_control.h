@@ -24,7 +24,7 @@
 typedef struct {
     int16_t motor_one_temp; 
     int16_t motor_two_temp;
-    int16_t bilge_current;		// Tylko to, reszte jebać
+    int16_t bilge_current;		
     int16_t output_flow;
 } SBT_s_pump_state_input;
 
