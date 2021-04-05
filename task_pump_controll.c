@@ -96,7 +96,7 @@ void SBT_System_Failure(SBT_e_pump_alarm error_id){
 void StartTaskPumpControll(void const * argument){
 	PUMP_STATE_INPUT_INIT(pump_msg);
 	SBT_s_pump_state_input *p_msg_received = &pump_msg;
-	SBT_s_pump_fatal_alarm pump_fatal_alarm = {.PUMP_STOP = 0, .LEAK= 0, .TEMP_READ_ERROR = 0, .OVERHEAT = 0};
+	PUMP_FATAL_ALARM_INIT(pump_fatal_alarm);
 	SBT_e_pump_alarm p_pump_alarm = NONE; //
 	SBT_e_pump_auto_action pump_auto_action = PUMP_AUTO_OFF; // Turn pump off deafultly on automatic mode
 	uint8_t pump_pin_state = 0;	// Init as pump turned off as it is checked and used later
