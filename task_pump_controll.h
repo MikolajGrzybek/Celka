@@ -1,11 +1,12 @@
 #ifndef INC_TASKPUMPCONTROLL_H_
 #define INC_TASKPUMPCONTROLL_H_
 
-#include "stdbool.h"
 #include "main.h"
-#include "sbt_can_msg.h"
 
+// Macros to initiate structs vaules
 #define PUMP_STATE_INPUT_INIT(X) SBT_s_pump_state_input X = {.motor_one_temp = 0, .motor_two_temp = 0, .input_flow = 0, .output_flow = 0}
+#define PUMP_FATAL_ALARM_INIT(X) SBT_s_pump_fatal_alarm ={.PUMP_STOP = 0, .LEAK= 0, .TEMP_READ_ERROR = 0, .OVERHEAT = 0}
+
 #define TASK_PUMP_CONTROLL_COMMUNICATION_DELAY 1000 // Dask delay in ms
 #define START_PUMP_TEMP 50// Motor temperature in deg C
 #define STOP_PUMP_TEMP 40 // Motor temperature in deg C
@@ -17,6 +18,34 @@
 #define Cooling_Pump_GPIO_Port TIM8_CH2_ENGINE_PUMP_GPIO_Port
 #define Cooling_Pump_Pin TIM8_CH2_ENGINE_PUMP_Pin
 
+typedef struct {
+    int16_t motor_one_temp;
+    int16_t motor_two_temp;
+    int16_t input_flow;
+    int16_t output_flow;
+} SBT_s_pump_state_input;
+
+typedef enum {
+	OVERHEAT,
+	TEMPERATURE_READ_ERROR,
+	DRY_RUNNING,
+	LEAK,
+	NONE,
+	TIMEOUT
+} SBT_e_pump_alarm;
+
+typedef struct {
+	uint8_t PUMP_STOP;
+	uint8_t LEAK;
+	uint8_t TEMP_READ_ERROR;
+	uint8_t OVERHEAT;
+} SBT_s_pump_fatal_alarm;
+
+typedef enum {
+	PUMP_ON,
+	PUMP_OFF,
+	PUMP_AUTO
+} SBT_e_pump_mode;
 
 typedef enum{
 	PUMP_AUTO_OFF,
