@@ -1,4 +1,4 @@
-#include "TaskPumpControl.h"
+#include "task_bilge_pump_control.h"
 #include "cmsis_os.h"
 
 
@@ -13,6 +13,22 @@ int SBT_Pump_Controll(SBT_e_bilge_current_state current_state){
 
 
 int SBT_Bilge_Current_Analysis(int16_t bilge_current){
+
+	if(bilge_current <= CURRENT_ZERO){
+		return 0; // Current = 0
+	}
+	else if(bilge_current => CURRENT_NO_WATER && bilge_current < CURRENT_WATER_DETECTED){
+		return 1; // Current = no water
+	}
+	else if(bilge_current => CURRENT_WATER_SPLASH && bilge_current < CURRENT_WATER_DETECTED){
+		return 2; // Current = splash of water detected
+	}
+	else if(bilge_current => CURRENT_WATER_DETECTED && bilge_current < CURRENT_OVER_CURRENT){
+		return 3; // Current = plenty of water detected
+	}
+	else if(bilge_current => CURRENT_OVER_CURRENT){
+		return 4; // Current = Overcurrent
+	}
 	
 }
 
@@ -48,7 +64,7 @@ void SBT_System_Failure(SBT_e_pump_alarm error_id){
 void Start_Task_PumpControl(void const * argument){
 	PUMP_STATE_INPUT_INIT(pump_msg);
 	SBT_s_pump_state_input *p_msg_received = &pump_msg;
-	SBT_s_pump_fatal_alarm pump_fatal_alarm = {.PUMP_BROKEN = 0, .PUMP_OVERCURRENT= 0};
+	PUMP_FATAL_ALARM_INIT(pump_fatal_alarm);
 	SBT_e_bilge_current_state current_state = ZERO; // Set current to 0 on init
 	SBT_e_pump_auto_action pump_auto_action = PUMP_AUTO_OFF; // Turn pump off deafultly on automatic mode
 	uint8_t loop_ctr = 0; // Counter for current analysis purpose
@@ -70,7 +86,7 @@ void Start_Task_PumpControl(void const * argument){
 		else{
 			SBT_System_Failure(TIMEOUT);
 			pump_auto_action = PUMP_AUTO_TIMEOUT; // Variable to check when return from timeout
-			if(pump_fatal_alarm.PUMP_BROKEN || pump_fatal_alarm.PUMP_OVERCURRENT){
+			if(pump_fatal_alarm.pump_current_zero || pump_fatal_alarm.pump_overcurrent){
 				g_pump_mode = PUMP_OFF;
 			}
 			else{
@@ -83,19 +99,24 @@ void Start_Task_PumpControl(void const * argument){
 		if(loop_ctr >= 30){
 			current_state = SBT_Bilge_Current_Analysis(p_msg_received->bilge_current);
 			// Fatal error msg handling (just for manual control purpose)
-			if(current_state == PUMP_BROKEN){
-				pump_fatal_alarm.PUMP_BROKEN = 1;
+			if(current_state == ZERO){
+				pump_fatal_alarm.pump_current_zero = 1;
 				SBT_System_Failure(PUMP_BROKEN);
 				loop_ctr = 0;
 			}
-			else if(current_state == PUMP_OVERCURRENT){
-				pump_fatal_alarm.PUMP_OVERCURRENT = 1;
+			else if(current_state == OVERCURRENT){
+				pump_fatal_alarm.pump_overcurrent = 1;
 				SBT_System_Failure(PUMP_OVERCURRENT);
 				loop_ctr = 0;
 			}
+			else if(current_state == WATER_DETECTED){
+				pump_fatal_alarm.pump_water_detected = 1;
+				SBT_System_Failure(WATER_DETECTED);
+				loop_ctr = 0;
+			}
 			else{
-				pump_fatal_alarm.PUMP_BROKEN = 0;
-				pump_fatal_alarm.PUMP_OVERCURRENT = 0;
+				pump_fatal_alarm.pump_current_zero = 0;
+				pump_fatal_alarm.pump_overcurrent = 0;
 				loop_ctr = 0;
 			}
 		}
@@ -120,7 +141,7 @@ void Start_Task_PumpControl(void const * argument){
 
 			case PUMP_AUTO:{
 				// Fatal error handling
-				if(pump_fatal_alarm.PUMP_BROKEN || PUMP_OVERCURRENT){
+				if(pump_fatal_alarm.pump_current_zero || pump_fatal_alarm.pump_overcurrent){
 					HAL_GPIO_WritePin(Cooling_Pump_GPIO_Port, Cooling_Pump_Pin, RESET);
 					break;
 				}

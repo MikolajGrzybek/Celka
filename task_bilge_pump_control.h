@@ -4,8 +4,18 @@
 #include "stdbool.h"
 #include "main.h"
 
-#define TASK_BILGE_PUMP_COMMUNICATION_DELAY 1000
+
+// Struct values init macro
 #define PUMP_STATE_INPUT_INIT(X) SBT_s_pump_state_input X = {.bilge_current = 0}
+// Struct pump fatal alarms init
+#define PUMP_FATAL_ALARM_INIT(X) SBT_s_pump_fatal_alarm X = {.pump_current_zero = 0, .pump_overcurrent = 0, .pump_water_detected = 0}
+// Bilge pump motor's current in [z]
+#define CURRENT_ZERO 0
+#define CURRENT_NO_WATER 100	
+#define CURRENT_WATER_SPLASH 500
+#define CURRENT_WATER_DETECTED 700	
+#define CURRENT_OVER_CURRENT 1500
+#define TASK_BILGE_PUMP_COMMUNICATION_DELAY 1000
 #define Cooling_Pump_GPIO_Port LD2_GPIO_Port
 #define Cooling_Pump_Pin LD2_Pin
 
@@ -21,18 +31,21 @@ typedef struct {
 typedef enum {
 	PUMP_BROKEN,
 	PUMP_OVERCURRENT,
+	WATER_DETECTED,
 	NONE,
 	TIMEOUT
 } SBT_e_pump_alarm;
 
 typedef struct {
-	uint8_t PUMP_BROKEN;
-	uint8_t PUMP_OVERCURRENT;
+	uint8_t pump_current_zero;
+	uint8_t pump_overcurrent;
+	uint8_t pump_water_detected;
 } SBT_s_pump_fatal_alarm;
 
 typedef enum {
 	ZERO,
 	NO_WATER,
+	WATER_SPLASH_DETECTED,
 	WATER_DETECTED,
 	OVERCURRENT
 } SBT_e_bilge_current_state;
