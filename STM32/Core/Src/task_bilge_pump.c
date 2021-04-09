@@ -1,4 +1,4 @@
-#include "task_bilge_pump_control.h"
+#include "task_bilge_pump.h"
 #include "cmsis_os.h"
 
 
@@ -8,25 +8,24 @@ extern osMailQId  mail;
 
 
 int SBT_Pump_Controll(SBT_e_bilge_current_state current_state){
-
+	return 0;
 }
 
 
-int SBT_Bilge_Current_Analysis(int16_t bilge_current){
-
+int SBT_Bilge_Pump_Current_Analysis(int16_t bilge_current){
 	if(bilge_current <= CURRENT_ZERO){
 		return 0; // Current = 0
 	}
-	else if(bilge_current => CURRENT_NO_WATER && bilge_current < CURRENT_WATER_DETECTED){
+	else if(bilge_current >= CURRENT_NO_WATER && bilge_current < CURRENT_WATER_DETECTED){
 		return 1; // Current = no water
 	}
-	else if(bilge_current => CURRENT_WATER_SPLASH && bilge_current < CURRENT_WATER_DETECTED){
+	else if(bilge_current >= CURRENT_WATER_SPLASH && bilge_current < CURRENT_WATER_DETECTED){
 		return 2; // Current = splash of water detected
 	}
-	else if(bilge_current => CURRENT_WATER_DETECTED && bilge_current < CURRENT_OVER_CURRENT){
+	else if(bilge_current >= CURRENT_WATER_DETECTED && bilge_current < CURRENT_OVER_CURRENT){
 		return 3; // Current = plenty of water detected
 	}
-	else if(bilge_current => CURRENT_OVER_CURRENT){
+	else if(bilge_current >= CURRENT_OVER_CURRENT){
 		return 4; // Current = Overcurrent
 	}
 	
@@ -95,9 +94,17 @@ void Start_Task_PumpControl(void const * argument){
 		}
 
 
-		// Flow analysis. Rougly every 30 seconds
-		if(loop_ctr >= 30){
-			current_state = SBT_Bilge_Current_Analysis(p_msg_received->bilge_current);
+		// Flow analysis. Roughly every 30 seconds
+		if(loop_ctr >= 30 && g_pump_mode != PUMP_OFF){
+			// Read pump's current
+			HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, SET);
+			osDelay(MEASURMENT_TIME);
+			// Obtain pumps current value here
+			current_state = SBT_Bilge_Pump_Current_Analysis(p_msg_received->bilge_current);
+			if(pump_auto_action != PUMP_AUTO_ON){
+				HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, RESET);
+			}
+
 			// Fatal error msg handling (just for manual control purpose)
 			if(current_state == ZERO){
 				pump_fatal_alarm.pump_current_zero = 1;
@@ -111,7 +118,7 @@ void Start_Task_PumpControl(void const * argument){
 			}
 			else if(current_state == WATER_DETECTED){
 				pump_fatal_alarm.pump_water_detected = 1;
-				SBT_System_Failure(WATER_DETECTED);
+				SBT_System_Failure(PUMP_WATER_DETECTED);
 				loop_ctr = 0;
 			}
 			else{

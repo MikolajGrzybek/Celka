@@ -1,7 +1,6 @@
 #ifndef INC_TASKPUMPCONTROLL_H_
 #define INC_TASKPUMPCONTROLL_H_
 
-#include "stdbool.h"
 #include "main.h"
 
 
@@ -16,6 +15,8 @@
 #define CURRENT_WATER_DETECTED 700	
 #define CURRENT_OVER_CURRENT 1500
 #define TASK_BILGE_PUMP_COMMUNICATION_DELAY 1000
+#define MEASURMENT_TIME 200 // ms
+// Debug purpose
 #define Cooling_Pump_GPIO_Port LD2_GPIO_Port
 #define Cooling_Pump_Pin LD2_Pin
 
@@ -31,7 +32,7 @@ typedef struct {
 typedef enum {
 	PUMP_BROKEN,
 	PUMP_OVERCURRENT,
-	WATER_DETECTED,
+	PUMP_WATER_DETECTED,
 	NONE,
 	TIMEOUT
 } SBT_e_pump_alarm;
@@ -83,7 +84,7 @@ int SBT_Pump_Controll(SBT_e_bilge_current_state current_state);
  * @retval ID of detected state to SBT_e_bilge_current_state
  *
  */
-int SBT_Bilge_Current_Analysis(int16_t bilge_current);
+int SBT_Bilge_Pump_Current_Analysis(int16_t bilge_current);
 
 
 /**
