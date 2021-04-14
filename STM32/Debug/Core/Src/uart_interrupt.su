@@ -1,7 +1,0 @@
-uart_interrupt.c:21:13:uartRxClb	16	static
-uart_interrupt.c:27:13:uartRxIdle	4	static
-uart_interrupt.c:32:6:uart_interrupt_isr	16	static
-uart_interrupt.c:53:6:uart_send_msg	24	static
-uart_interrupt.c:73:6:uart_interrupts_enable	4	static
-uart_interrupt.c:80:15:uart_get_state	4	static
-uart_interrupt.c:83:6:uart_get_data	24	static

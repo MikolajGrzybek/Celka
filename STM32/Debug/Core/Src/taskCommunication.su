@@ -1,5 +1,0 @@
-taskCommunication.c:30:6:uartRxClb	16	static
-taskCommunication.c:37:6:writeBytes	16	static
-taskCommunication.c:42:6:decoderData	32	static
-taskCommunication.c:97:6:decoderSendDataRtos	24	static
-taskCommunication.c:119:6:StartTaskCommunication	24	static

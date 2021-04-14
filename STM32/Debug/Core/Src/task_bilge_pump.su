@@ -1,4 +1,0 @@
-task_bilge_pump.c:10:5:SBT_Pump_Controll	16	static
-task_bilge_pump.c:15:5:SBT_Bilge_Pump_Current_Analysis	16	static
-task_bilge_pump.c:35:6:SBT_System_Failure	24	static
-task_bilge_pump.c:63:6:Start_Task_PumpControl	48	static
