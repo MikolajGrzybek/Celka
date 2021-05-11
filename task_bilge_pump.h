@@ -4,32 +4,43 @@
 #include "main.h"
 #include "adc.h"
 #include "dma.h"
-#include "sbt_can_msg.h"
 
 
 // Struct pump fatal alarms init
 #define BILGE_FATAL_ERROR_INIT(X) SBT_s_bilge_fatal_error X = {.bilge_current_zero = 0, .bilge_overcurrent = 0, .water_detected_current = 0, .water_detected_sensor = 0}
-
-
 // Bilge pump motor's current in [mA] unit
 #define CURRENT_ZERO 0
 #define CURRENT_NO_WATER 500
-#define CURRENT_WATER_DETECTED 700
-#define CURRENT_OVERCURRENT 1000
+#define CURRENT_WATER_DETECTED 800
+#define CURRENT_OVERCURRENT 2700
 // Current measurement time settings
-#define CURRENT_PEAK_DELAY 200 // 200  [ms]
-#define MEASUREMENT_DELAY  5000 //now debug usually: 300000UL 5 [min]
-#define MEASUREMENT_DELAY_CHECK_FATAL 10000 // 10 [min]
-#define MEASUREMENT_DELAY_CHECK_WATER_FIRST 15000 // 10 [s]
-#define MEASUREMENT_DELAY_CHECK_WATER_SECOND 20000 // 15 [s]
+#define START_UP_DELAY 3000 // 3 [s]
+#define PEAK_DELAY 2000 // 2 [s]
+#define MEASUREMENT_DELAY  300000UL // 5 [min]
+#define MEASUREMENT_DELAY_CHECK_FATAL 600000UL // 10 [min]
+#define MEASUREMENT_DELAY_CHECK_WATER_FIRST 10000 // 10 [s]
+#define MEASUREMENT_DELAY_CHECK_WATER_SECOND 15000 // 15 [s]
 // Current pump's current array id
-#define PUMP_CURRENT 99
+#define PUMP_CURRENT_ARR_ID 1
 // Current calculate consts
 #define V_REF 3300 // [mV]
 #define ADC_RANGE 4096 // [bits]
+#define KU 11
+#define SHUNT_RESISTANCE 10 // divide by 1/10[Ω]
 // Task Bilge Pump settings
 #define TASK_BILGE_PUMP_COMMUNICATION_DELAY 1000 // 1 [s]
+// Debug
+#define BILGE_PUMP_Port BIG_PUMP_GPIO_Port
+#define BILGE_PUMP_Pin BIG_PUMP_Pin
 
+
+typedef struct {
+	uint8_t bilge_current_zero;
+	uint8_t bilge_overcurrent;
+	uint8_t current_read_error;
+	uint8_t water_detected_current;
+	uint8_t water_detected_sensor;
+} SBT_s_bilge_fatal_error;
 
 typedef enum {
 	BILGE_WATER_DETECTED_BY_CURRENT,
@@ -47,14 +58,6 @@ typedef enum {
 	BILGE_PUMP_OFF,
 	BILGE_PUMP_AUTO
 } SBT_e_bilge_mode;
-
-typedef struct {
-	uint8_t bilge_current_zero;
-	uint8_t bilge_overcurrent;
-	uint8_t current_read_error;
-	uint8_t water_detected_current;
-	uint8_t water_detected_sensor;
-} SBT_s_bilge_fatal_error;
 
 typedef enum{
 	BILGE_PUMP_AUTO_OFF,
@@ -84,7 +87,7 @@ int SBT_Bilge_Auto_Controll(SBT_s_bilge_fatal_error* bilge_fatal_error);
  * 
  * @retval None
  */
-void SBT_Bilge_State_Check(uint16_t bilge_parameters, SBT_s_bilge_fatal_error* bilge_fatal_error);
+void SBT_Bilge_State_Check(uint16_t delay, SBT_s_bilge_fatal_error* bilge_fatal_error);
 
 
 /**
@@ -96,7 +99,7 @@ void SBT_Bilge_State_Check(uint16_t bilge_parameters, SBT_s_bilge_fatal_error* b
  *
  * @return None
  */
-void SBT_Bilge_Detect_Water_By_Current(uint16_t pump_current, SBT_s_bilge_fatal_error* bilge_fatal_error);
+void SBT_Bilge_Detect_Water_By_Current(uint16_t bilge_current, SBT_s_bilge_fatal_error* bilge_fatal_error);
 
 
 /**
@@ -109,7 +112,7 @@ void SBT_Bilge_Detect_Water_By_Current(uint16_t pump_current, SBT_s_bilge_fatal_
  * @retval None
  *
  */
-void SBT_Bilge_Pump_Error_Analysis(uint16_t pump_current, SBT_s_bilge_fatal_error* bilge_fatal_error);
+void SBT_Bilge_Pump_Error_Analysis(uint16_t bilge_current, SBT_s_bilge_fatal_error* bilge_fatal_error);
 
 
 // -------------------------------------- WARER SENSOR RELATED ----------------------------------------
@@ -145,34 +148,5 @@ void SBT_Bilge_System_Failure(SBT_e_bilge_event bilge_event_id);
  *
  */
 void StartTaskBilgePump(void const * argument);
-
-
-// Quick test delays
-///////////////////////////////////////////////////////////////////////////////////////
-// Timer .h  file
-void delayUs(int16_t us);
-
-void delayMs(int32_t ms);
-
-float map(float xin, float xa, float xb, float ya, float yb);
-
-#define constrain(amt,low,high) ((amt)<(low)?(low):((amt)>(high)?(high):(amt)))
-
-// #define UNUSED(x) (void)(x)
-
-//timer
-
-// set lastExec to current time
-void timerArm(uint32_t* lastExecTime);
-
-//add delay to last execution time. Use olny after timer expired.
-void timerArmAgain(uint32_t* lastExecTime, uint32_t delay_ms);
-
-// return remaining time to complete delay ( before, positive
-int64_t timerGet(uint32_t lastExecTime, uint32_t delay_ms );
-
-//return remaining time or 0
-uint32_t timerGetRemaining(uint32_t lastExecTime, uint32_t delay_ms );
-///////////////////////////////////////////////////////////////////////////////////////
 
 #endif /* INC_TASKPUMPCONTROLL_H_ */
