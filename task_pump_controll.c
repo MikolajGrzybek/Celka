@@ -110,9 +110,6 @@ void StartTaskPumpControll(void const * argument){
 
 		if(evt.status == osEventMail){
 			p_msg_received = evt.value.p; // Process values update when available
-			if(pump_auto_action == PUMP_AUTO_TIMEOUT){
-				g_pump_mode = PUMP_AUTO; // Turn on Pump Auto Mode when return from timeout
-			}
 		}
 
 		// Connection timeout check
@@ -120,10 +117,10 @@ void StartTaskPumpControll(void const * argument){
 			SBT_System_Failure(TIMEOUT);
 			pump_auto_action = PUMP_AUTO_TIMEOUT; // Variable to check when return from timeout
 			if(pump_fatal_alarm.PUMP_STOP || pump_fatal_alarm.LEAK){
-				g_pump_mode = PUMP_OFF;
+				pump_auto_action = PUMP_AUTO_OFF;
 			}
 			else{
-				g_pump_mode = PUMP_ON;
+				pump_auto_action = PUMP_AUTO_ON;
 			}
 		}
 
