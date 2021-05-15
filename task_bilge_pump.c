@@ -165,7 +165,7 @@ void StartTaskBilgePump(void const * argument){
 	// Set variables values on init
 	SBT_e_bilge_auto_action bilge_auto_action = BILGE_PUMP_AUTO_OFF;
 	uint32_t reportTimeCh1 = 0;
-	uint16_t measure_time = MEASUREMENT_DELAY;
+	uint32_t measure_time = MEASUREMENT_DELAY;
 	uint8_t water_detected_times = 0;
 	uint8_t pump_fatal_errors = 0;
 	uint8_t pump_dead = 0;
