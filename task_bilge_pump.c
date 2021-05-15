@@ -268,5 +268,6 @@ void StartTaskBilgePump(void const * argument){
 				break;
 				}
 			}
+		osDelay(100);
 		}
 	}
