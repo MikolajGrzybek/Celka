@@ -1,0 +1,3 @@
+/home/mikolaj/Documents/Embeded-C/build/CMakeFiles/rebuild_cache.dir
+/home/mikolaj/Documents/Embeded-C/build/CMakeFiles/edit_cache.dir
+/home/mikolaj/Documents/Embeded-C/build/CMakeFiles/Gui.dir
