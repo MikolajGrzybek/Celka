@@ -1,5 +1,5 @@
 extern "C"{
-
+    #include "lib/e-Paper/EPD_IT8951.h"
     #include "lib/GUI/GUI_BMPfile.h"
     #include "lib/Config/DEV_Config.h" 
 }

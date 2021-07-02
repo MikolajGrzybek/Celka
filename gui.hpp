@@ -1,8 +1,11 @@
 #ifndef __EXAMPLE__
 #define __EXAMPLE__
 
-#include "lib/e-Paper/EPD_IT8951.h"
-#include "lib/Config/DEV_Config.h"
+extern "C"{
+    #include "lib/e-Paper/EPD_IT8951.h"
+    #include "lib/Config/DEV_Config.h"
+}
+
 
 
 // 1 bit per pixel, which is 2 grayscale
