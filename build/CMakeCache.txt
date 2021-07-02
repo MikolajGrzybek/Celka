@@ -215,6 +215,9 @@ Gui_BINARY_DIR:STATIC=/home/mikolaj/Documents/Embeded-C/build
 //Value Computed by CMake
 Gui_SOURCE_DIR:STATIC=/home/mikolaj/Documents/Embeded-C
 
+//Dependencies for the target
+LibsModule_LIB_DEPENDS:STATIC=general;-lpthread;
+
 
 ########################
 # INTERNAL cache entries

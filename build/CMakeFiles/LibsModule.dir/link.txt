@@ -1,0 +1,2 @@
+/usr/bin/ar qc libLibsModule.a CMakeFiles/LibsModule.dir/lib/bcm2835/bcm2835.c.o
+/usr/bin/ranlib libLibsModule.a

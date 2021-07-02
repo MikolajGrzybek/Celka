@@ -8,10 +8,10 @@
 #include <cstdlib>
 
 extern "C"{
-    #include "epaper/e-Paper/EPD_IT8951.h"
-    #include "epaper/GUI/GUI_Paint.h"
-    #include "epaper/GUI/GUI_BMPfile.h"
-    #include "epaper/Config/Debug.h" 
+    #include "lib/e-Paper/EPD_IT8951.h"
+    #include "lib/GUI/GUI_Paint.h"
+    #include "lib/GUI/GUI_BMPfile.h"
+    #include "lib/Config/Debug.h" 
 }
 
 UBYTE *Refresh_Frame_Buf = NULL;
