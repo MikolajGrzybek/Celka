@@ -117,19 +117,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LibsModule
-
-# Build rule for target.
-LibsModule: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LibsModule
-.PHONY : LibsModule
-
-# fast build rule for target.
-LibsModule/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibsModule.dir/build.make CMakeFiles/LibsModule.dir/build
-.PHONY : LibsModule/fast
-
-#=============================================================================
 # Target rules for targets named Gui
 
 # Build rule for target.
@@ -141,6 +128,163 @@ Gui: cmake_check_build_system
 Gui/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/build
 .PHONY : Gui/fast
+
+#=============================================================================
+# Target rules for targets named Gui_autogen
+
+# Build rule for target.
+Gui_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Gui_autogen
+.PHONY : Gui_autogen
+
+# fast build rule for target.
+Gui_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui_autogen.dir/build.make CMakeFiles/Gui_autogen.dir/build
+.PHONY : Gui_autogen/fast
+
+Gui_autogen/EWIEGA46WW/qrc_resources.o: Gui_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : Gui_autogen/EWIEGA46WW/qrc_resources.o
+
+# target to build an object file
+Gui_autogen/EWIEGA46WW/qrc_resources.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/Gui_autogen/EWIEGA46WW/qrc_resources.cpp.o
+.PHONY : Gui_autogen/EWIEGA46WW/qrc_resources.cpp.o
+
+Gui_autogen/EWIEGA46WW/qrc_resources.i: Gui_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : Gui_autogen/EWIEGA46WW/qrc_resources.i
+
+# target to preprocess a source file
+Gui_autogen/EWIEGA46WW/qrc_resources.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/Gui_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : Gui_autogen/EWIEGA46WW/qrc_resources.cpp.i
+
+Gui_autogen/EWIEGA46WW/qrc_resources.s: Gui_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : Gui_autogen/EWIEGA46WW/qrc_resources.s
+
+# target to generate assembly for a file
+Gui_autogen/EWIEGA46WW/qrc_resources.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/Gui_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : Gui_autogen/EWIEGA46WW/qrc_resources.cpp.s
+
+Gui_autogen/mocs_compilation.o: Gui_autogen/mocs_compilation.cpp.o
+.PHONY : Gui_autogen/mocs_compilation.o
+
+# target to build an object file
+Gui_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.o
+.PHONY : Gui_autogen/mocs_compilation.cpp.o
+
+Gui_autogen/mocs_compilation.i: Gui_autogen/mocs_compilation.cpp.i
+.PHONY : Gui_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+Gui_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.i
+.PHONY : Gui_autogen/mocs_compilation.cpp.i
+
+Gui_autogen/mocs_compilation.s: Gui_autogen/mocs_compilation.cpp.s
+.PHONY : Gui_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+Gui_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.s
+.PHONY : Gui_autogen/mocs_compilation.cpp.s
+
+can/can.o: can/can.cpp.o
+.PHONY : can/can.o
+
+# target to build an object file
+can/can.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/can/can.cpp.o
+.PHONY : can/can.cpp.o
+
+can/can.i: can/can.cpp.i
+.PHONY : can/can.i
+
+# target to preprocess a source file
+can/can.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/can/can.cpp.i
+.PHONY : can/can.cpp.i
+
+can/can.s: can/can.cpp.s
+.PHONY : can/can.s
+
+# target to generate assembly for a file
+can/can.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/can/can.cpp.s
+.PHONY : can/can.cpp.s
+
+can/utils.o: can/utils.cpp.o
+.PHONY : can/utils.o
+
+# target to build an object file
+can/utils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/can/utils.cpp.o
+.PHONY : can/utils.cpp.o
+
+can/utils.i: can/utils.cpp.i
+.PHONY : can/utils.i
+
+# target to preprocess a source file
+can/utils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/can/utils.cpp.i
+.PHONY : can/utils.cpp.i
+
+can/utils.s: can/utils.cpp.s
+.PHONY : can/utils.s
+
+# target to generate assembly for a file
+can/utils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/can/utils.cpp.s
+.PHONY : can/utils.cpp.s
+
+gps/gps.o: gps/gps.cpp.o
+.PHONY : gps/gps.o
+
+# target to build an object file
+gps/gps.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/gps/gps.cpp.o
+.PHONY : gps/gps.cpp.o
+
+gps/gps.i: gps/gps.cpp.i
+.PHONY : gps/gps.i
+
+# target to preprocess a source file
+gps/gps.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/gps/gps.cpp.i
+.PHONY : gps/gps.cpp.i
+
+gps/gps.s: gps/gps.cpp.s
+.PHONY : gps/gps.s
+
+# target to generate assembly for a file
+gps/gps.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/gps/gps.cpp.s
+.PHONY : gps/gps.cpp.s
+
+gps/parser.o: gps/parser.cpp.o
+.PHONY : gps/parser.o
+
+# target to build an object file
+gps/parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/gps/parser.cpp.o
+.PHONY : gps/parser.cpp.o
+
+gps/parser.i: gps/parser.cpp.i
+.PHONY : gps/parser.i
+
+# target to preprocess a source file
+gps/parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/gps/parser.cpp.i
+.PHONY : gps/parser.cpp.i
+
+gps/parser.s: gps/parser.cpp.s
+.PHONY : gps/parser.s
+
+# target to generate assembly for a file
+gps/parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/gps/parser.cpp.s
+.PHONY : gps/parser.cpp.s
 
 gui.o: gui.cpp.o
 .PHONY : gui.o
@@ -166,297 +310,6 @@ gui.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/gui.cpp.s
 .PHONY : gui.cpp.s
 
-lib/Config/DEV_Config.o: lib/Config/DEV_Config.c.o
-.PHONY : lib/Config/DEV_Config.o
-
-# target to build an object file
-lib/Config/DEV_Config.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Config/DEV_Config.c.o
-.PHONY : lib/Config/DEV_Config.c.o
-
-lib/Config/DEV_Config.i: lib/Config/DEV_Config.c.i
-.PHONY : lib/Config/DEV_Config.i
-
-# target to preprocess a source file
-lib/Config/DEV_Config.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Config/DEV_Config.c.i
-.PHONY : lib/Config/DEV_Config.c.i
-
-lib/Config/DEV_Config.s: lib/Config/DEV_Config.c.s
-.PHONY : lib/Config/DEV_Config.s
-
-# target to generate assembly for a file
-lib/Config/DEV_Config.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Config/DEV_Config.c.s
-.PHONY : lib/Config/DEV_Config.c.s
-
-lib/Fonts/font12.o: lib/Fonts/font12.c.o
-.PHONY : lib/Fonts/font12.o
-
-# target to build an object file
-lib/Fonts/font12.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font12.c.o
-.PHONY : lib/Fonts/font12.c.o
-
-lib/Fonts/font12.i: lib/Fonts/font12.c.i
-.PHONY : lib/Fonts/font12.i
-
-# target to preprocess a source file
-lib/Fonts/font12.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font12.c.i
-.PHONY : lib/Fonts/font12.c.i
-
-lib/Fonts/font12.s: lib/Fonts/font12.c.s
-.PHONY : lib/Fonts/font12.s
-
-# target to generate assembly for a file
-lib/Fonts/font12.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font12.c.s
-.PHONY : lib/Fonts/font12.c.s
-
-lib/Fonts/font12CN.o: lib/Fonts/font12CN.c.o
-.PHONY : lib/Fonts/font12CN.o
-
-# target to build an object file
-lib/Fonts/font12CN.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font12CN.c.o
-.PHONY : lib/Fonts/font12CN.c.o
-
-lib/Fonts/font12CN.i: lib/Fonts/font12CN.c.i
-.PHONY : lib/Fonts/font12CN.i
-
-# target to preprocess a source file
-lib/Fonts/font12CN.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font12CN.c.i
-.PHONY : lib/Fonts/font12CN.c.i
-
-lib/Fonts/font12CN.s: lib/Fonts/font12CN.c.s
-.PHONY : lib/Fonts/font12CN.s
-
-# target to generate assembly for a file
-lib/Fonts/font12CN.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font12CN.c.s
-.PHONY : lib/Fonts/font12CN.c.s
-
-lib/Fonts/font16.o: lib/Fonts/font16.c.o
-.PHONY : lib/Fonts/font16.o
-
-# target to build an object file
-lib/Fonts/font16.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font16.c.o
-.PHONY : lib/Fonts/font16.c.o
-
-lib/Fonts/font16.i: lib/Fonts/font16.c.i
-.PHONY : lib/Fonts/font16.i
-
-# target to preprocess a source file
-lib/Fonts/font16.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font16.c.i
-.PHONY : lib/Fonts/font16.c.i
-
-lib/Fonts/font16.s: lib/Fonts/font16.c.s
-.PHONY : lib/Fonts/font16.s
-
-# target to generate assembly for a file
-lib/Fonts/font16.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font16.c.s
-.PHONY : lib/Fonts/font16.c.s
-
-lib/Fonts/font20.o: lib/Fonts/font20.c.o
-.PHONY : lib/Fonts/font20.o
-
-# target to build an object file
-lib/Fonts/font20.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font20.c.o
-.PHONY : lib/Fonts/font20.c.o
-
-lib/Fonts/font20.i: lib/Fonts/font20.c.i
-.PHONY : lib/Fonts/font20.i
-
-# target to preprocess a source file
-lib/Fonts/font20.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font20.c.i
-.PHONY : lib/Fonts/font20.c.i
-
-lib/Fonts/font20.s: lib/Fonts/font20.c.s
-.PHONY : lib/Fonts/font20.s
-
-# target to generate assembly for a file
-lib/Fonts/font20.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font20.c.s
-.PHONY : lib/Fonts/font20.c.s
-
-lib/Fonts/font24.o: lib/Fonts/font24.c.o
-.PHONY : lib/Fonts/font24.o
-
-# target to build an object file
-lib/Fonts/font24.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font24.c.o
-.PHONY : lib/Fonts/font24.c.o
-
-lib/Fonts/font24.i: lib/Fonts/font24.c.i
-.PHONY : lib/Fonts/font24.i
-
-# target to preprocess a source file
-lib/Fonts/font24.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font24.c.i
-.PHONY : lib/Fonts/font24.c.i
-
-lib/Fonts/font24.s: lib/Fonts/font24.c.s
-.PHONY : lib/Fonts/font24.s
-
-# target to generate assembly for a file
-lib/Fonts/font24.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font24.c.s
-.PHONY : lib/Fonts/font24.c.s
-
-lib/Fonts/font24CN.o: lib/Fonts/font24CN.c.o
-.PHONY : lib/Fonts/font24CN.o
-
-# target to build an object file
-lib/Fonts/font24CN.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font24CN.c.o
-.PHONY : lib/Fonts/font24CN.c.o
-
-lib/Fonts/font24CN.i: lib/Fonts/font24CN.c.i
-.PHONY : lib/Fonts/font24CN.i
-
-# target to preprocess a source file
-lib/Fonts/font24CN.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font24CN.c.i
-.PHONY : lib/Fonts/font24CN.c.i
-
-lib/Fonts/font24CN.s: lib/Fonts/font24CN.c.s
-.PHONY : lib/Fonts/font24CN.s
-
-# target to generate assembly for a file
-lib/Fonts/font24CN.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font24CN.c.s
-.PHONY : lib/Fonts/font24CN.c.s
-
-lib/Fonts/font8.o: lib/Fonts/font8.c.o
-.PHONY : lib/Fonts/font8.o
-
-# target to build an object file
-lib/Fonts/font8.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font8.c.o
-.PHONY : lib/Fonts/font8.c.o
-
-lib/Fonts/font8.i: lib/Fonts/font8.c.i
-.PHONY : lib/Fonts/font8.i
-
-# target to preprocess a source file
-lib/Fonts/font8.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font8.c.i
-.PHONY : lib/Fonts/font8.c.i
-
-lib/Fonts/font8.s: lib/Fonts/font8.c.s
-.PHONY : lib/Fonts/font8.s
-
-# target to generate assembly for a file
-lib/Fonts/font8.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/Fonts/font8.c.s
-.PHONY : lib/Fonts/font8.c.s
-
-lib/GUI/GUI_BMPfile.o: lib/GUI/GUI_BMPfile.c.o
-.PHONY : lib/GUI/GUI_BMPfile.o
-
-# target to build an object file
-lib/GUI/GUI_BMPfile.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/GUI/GUI_BMPfile.c.o
-.PHONY : lib/GUI/GUI_BMPfile.c.o
-
-lib/GUI/GUI_BMPfile.i: lib/GUI/GUI_BMPfile.c.i
-.PHONY : lib/GUI/GUI_BMPfile.i
-
-# target to preprocess a source file
-lib/GUI/GUI_BMPfile.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/GUI/GUI_BMPfile.c.i
-.PHONY : lib/GUI/GUI_BMPfile.c.i
-
-lib/GUI/GUI_BMPfile.s: lib/GUI/GUI_BMPfile.c.s
-.PHONY : lib/GUI/GUI_BMPfile.s
-
-# target to generate assembly for a file
-lib/GUI/GUI_BMPfile.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/GUI/GUI_BMPfile.c.s
-.PHONY : lib/GUI/GUI_BMPfile.c.s
-
-lib/GUI/GUI_Paint.o: lib/GUI/GUI_Paint.c.o
-.PHONY : lib/GUI/GUI_Paint.o
-
-# target to build an object file
-lib/GUI/GUI_Paint.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/GUI/GUI_Paint.c.o
-.PHONY : lib/GUI/GUI_Paint.c.o
-
-lib/GUI/GUI_Paint.i: lib/GUI/GUI_Paint.c.i
-.PHONY : lib/GUI/GUI_Paint.i
-
-# target to preprocess a source file
-lib/GUI/GUI_Paint.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/GUI/GUI_Paint.c.i
-.PHONY : lib/GUI/GUI_Paint.c.i
-
-lib/GUI/GUI_Paint.s: lib/GUI/GUI_Paint.c.s
-.PHONY : lib/GUI/GUI_Paint.s
-
-# target to generate assembly for a file
-lib/GUI/GUI_Paint.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/GUI/GUI_Paint.c.s
-.PHONY : lib/GUI/GUI_Paint.c.s
-
-lib/bcm2835/bcm2835.o: lib/bcm2835/bcm2835.c.o
-.PHONY : lib/bcm2835/bcm2835.o
-
-# target to build an object file
-lib/bcm2835/bcm2835.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibsModule.dir/build.make CMakeFiles/LibsModule.dir/lib/bcm2835/bcm2835.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/bcm2835/bcm2835.c.o
-.PHONY : lib/bcm2835/bcm2835.c.o
-
-lib/bcm2835/bcm2835.i: lib/bcm2835/bcm2835.c.i
-.PHONY : lib/bcm2835/bcm2835.i
-
-# target to preprocess a source file
-lib/bcm2835/bcm2835.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibsModule.dir/build.make CMakeFiles/LibsModule.dir/lib/bcm2835/bcm2835.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/bcm2835/bcm2835.c.i
-.PHONY : lib/bcm2835/bcm2835.c.i
-
-lib/bcm2835/bcm2835.s: lib/bcm2835/bcm2835.c.s
-.PHONY : lib/bcm2835/bcm2835.s
-
-# target to generate assembly for a file
-lib/bcm2835/bcm2835.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LibsModule.dir/build.make CMakeFiles/LibsModule.dir/lib/bcm2835/bcm2835.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/bcm2835/bcm2835.c.s
-.PHONY : lib/bcm2835/bcm2835.c.s
-
-lib/e-Paper/EPD_IT8951.o: lib/e-Paper/EPD_IT8951.c.o
-.PHONY : lib/e-Paper/EPD_IT8951.o
-
-# target to build an object file
-lib/e-Paper/EPD_IT8951.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/e-Paper/EPD_IT8951.c.o
-.PHONY : lib/e-Paper/EPD_IT8951.c.o
-
-lib/e-Paper/EPD_IT8951.i: lib/e-Paper/EPD_IT8951.c.i
-.PHONY : lib/e-Paper/EPD_IT8951.i
-
-# target to preprocess a source file
-lib/e-Paper/EPD_IT8951.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/e-Paper/EPD_IT8951.c.i
-.PHONY : lib/e-Paper/EPD_IT8951.c.i
-
-lib/e-Paper/EPD_IT8951.s: lib/e-Paper/EPD_IT8951.c.s
-.PHONY : lib/e-Paper/EPD_IT8951.s
-
-# target to generate assembly for a file
-lib/e-Paper/EPD_IT8951.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/lib/e-Paper/EPD_IT8951.c.s
-.PHONY : lib/e-Paper/EPD_IT8951.c.s
-
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -481,6 +334,54 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+mav.o: mav.cpp.o
+.PHONY : mav.o
+
+# target to build an object file
+mav.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/mav.cpp.o
+.PHONY : mav.cpp.o
+
+mav.i: mav.cpp.i
+.PHONY : mav.i
+
+# target to preprocess a source file
+mav.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/mav.cpp.i
+.PHONY : mav.cpp.i
+
+mav.s: mav.cpp.s
+.PHONY : mav.s
+
+# target to generate assembly for a file
+mav.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/mav.cpp.s
+.PHONY : mav.cpp.s
+
+serialport/serialport.o: serialport/serialport.cpp.o
+.PHONY : serialport/serialport.o
+
+# target to build an object file
+serialport/serialport.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/serialport/serialport.cpp.o
+.PHONY : serialport/serialport.cpp.o
+
+serialport/serialport.i: serialport/serialport.cpp.i
+.PHONY : serialport/serialport.i
+
+# target to preprocess a source file
+serialport/serialport.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/serialport/serialport.cpp.i
+.PHONY : serialport/serialport.cpp.i
+
+serialport/serialport.s: serialport/serialport.cpp.s
+.PHONY : serialport/serialport.s
+
+# target to generate assembly for a file
+serialport/serialport.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/serialport/serialport.cpp.s
+.PHONY : serialport/serialport.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -489,50 +390,38 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Gui_autogen"
 	@echo "... Gui"
-	@echo "... LibsModule"
+	@echo "... Gui_autogen/EWIEGA46WW/qrc_resources.o"
+	@echo "... Gui_autogen/EWIEGA46WW/qrc_resources.i"
+	@echo "... Gui_autogen/EWIEGA46WW/qrc_resources.s"
+	@echo "... Gui_autogen/mocs_compilation.o"
+	@echo "... Gui_autogen/mocs_compilation.i"
+	@echo "... Gui_autogen/mocs_compilation.s"
+	@echo "... can/can.o"
+	@echo "... can/can.i"
+	@echo "... can/can.s"
+	@echo "... can/utils.o"
+	@echo "... can/utils.i"
+	@echo "... can/utils.s"
+	@echo "... gps/gps.o"
+	@echo "... gps/gps.i"
+	@echo "... gps/gps.s"
+	@echo "... gps/parser.o"
+	@echo "... gps/parser.i"
+	@echo "... gps/parser.s"
 	@echo "... gui.o"
 	@echo "... gui.i"
 	@echo "... gui.s"
-	@echo "... lib/Config/DEV_Config.o"
-	@echo "... lib/Config/DEV_Config.i"
-	@echo "... lib/Config/DEV_Config.s"
-	@echo "... lib/Fonts/font12.o"
-	@echo "... lib/Fonts/font12.i"
-	@echo "... lib/Fonts/font12.s"
-	@echo "... lib/Fonts/font12CN.o"
-	@echo "... lib/Fonts/font12CN.i"
-	@echo "... lib/Fonts/font12CN.s"
-	@echo "... lib/Fonts/font16.o"
-	@echo "... lib/Fonts/font16.i"
-	@echo "... lib/Fonts/font16.s"
-	@echo "... lib/Fonts/font20.o"
-	@echo "... lib/Fonts/font20.i"
-	@echo "... lib/Fonts/font20.s"
-	@echo "... lib/Fonts/font24.o"
-	@echo "... lib/Fonts/font24.i"
-	@echo "... lib/Fonts/font24.s"
-	@echo "... lib/Fonts/font24CN.o"
-	@echo "... lib/Fonts/font24CN.i"
-	@echo "... lib/Fonts/font24CN.s"
-	@echo "... lib/Fonts/font8.o"
-	@echo "... lib/Fonts/font8.i"
-	@echo "... lib/Fonts/font8.s"
-	@echo "... lib/GUI/GUI_BMPfile.o"
-	@echo "... lib/GUI/GUI_BMPfile.i"
-	@echo "... lib/GUI/GUI_BMPfile.s"
-	@echo "... lib/GUI/GUI_Paint.o"
-	@echo "... lib/GUI/GUI_Paint.i"
-	@echo "... lib/GUI/GUI_Paint.s"
-	@echo "... lib/bcm2835/bcm2835.o"
-	@echo "... lib/bcm2835/bcm2835.i"
-	@echo "... lib/bcm2835/bcm2835.s"
-	@echo "... lib/e-Paper/EPD_IT8951.o"
-	@echo "... lib/e-Paper/EPD_IT8951.i"
-	@echo "... lib/e-Paper/EPD_IT8951.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... mav.o"
+	@echo "... mav.i"
+	@echo "... mav.s"
+	@echo "... serialport/serialport.o"
+	@echo "... serialport/serialport.i"
+	@echo "... serialport/serialport.s"
 .PHONY : help
 
 

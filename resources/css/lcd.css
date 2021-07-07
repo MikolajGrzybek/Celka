@@ -1,0 +1,8 @@
+/* LCD Number style */
+QLCDNumber{
+    border:         3px solid grey;
+    border-radius:  6px;
+    padding:        50px;
+    text-align:     center;
+    color:           red;
+}

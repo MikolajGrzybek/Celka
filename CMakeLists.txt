@@ -1,49 +1,74 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(Gui)
+project(Gui LANGUAGES CXX)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
+
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-
-
+find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 set(PROJECT_SOURCES
-
-    lib/e-Paper/EPD_IT8951.c
-    lib/e-Paper/EPD_IT8951.h
-    lib/GUI/GUI_BMPfile.c
-    lib/GUI/GUI_BMPfile.h
-    lib/GUI/GUI_Paint.c
-    lib/GUI/GUI_Paint.h
-    lib/Fonts/font8.c
-    lib/Fonts/font12.c
-    lib/Fonts/font12CN.c
-    lib/Fonts/font16.c
-    lib/Fonts/font20.c
-    lib/Fonts/font24.c
-    lib/Fonts/font24CN.c
-    lib/Fonts/fonts.h
-    lib/Config/Debug.h
-    lib/Config/DEV_Config.c
-    lib/Config/DEV_Config.h
-    lib/bcm2835/bcm2835.c
-    lib/bcm2835/bcm2835.h
-
     main.cpp
+
     gui.cpp
     gui.hpp
+    gui.ui
 
+    mav.cpp
+
+    resources.qrc
+
+    can/can.cpp
+    can/can.hpp
+    can/utils.cpp
+    can/utils.h
+
+    serialport/serialport.hpp
+    serialport/serialport.cpp
+
+    gps/gps.cpp
+    gps/gps.hpp
+    gps/gps_init.h
+    gps/parser.cpp
+    gps/parser.hpp
+
+    gps/msgs/NMEA.hpp
+
+    #TODO: check what is rly used
+    epaper/e-Paper/EPD_IT8951.c
+    epaper/e-Paper/EPD_IT8951.h
+    epaper/GUI/GUI_BMPfile.c
+    epaper/GUI/GUI_BMPfile.h
+    epaper/GUI/GUI_Paint.c
+    epaper/GUI/GUI_Paint.h
+    epaper/Fonts/font8.c
+    epaper/Fonts/font12.c
+    epaper/Fonts/font12CN.c
+    epaper/Fonts/font16.c
+    epaper/Fonts/font20.c
+    epaper/Fonts/font24.c
+    epaper/Fonts/font24CN.c
+    epaper/Fonts/fonts.h
+    epaper/Config/Debug.h
+    epaper/Config/DEV_Config.c
+    epaper/Config/DEV_Config.h
+    epaper/bcm2835/bcm2835.c
+    epaper/bcm2835/bcm2835.h
 )
 
 add_executable(Gui
     ${PROJECT_SOURCES}
 )
 
-ADD_LIBRARY(LibsModule 
-    lib/bcm2835/bcm2835.c
-    lib/bcm2835/bcm2835.h
-)
+target_link_libraries(Gui PRIVATE
+    Qt${QT_VERSION_MAJOR}::Widgets
+    pthread
+    )
 
-target_link_libraries(LibsModule -lpthread)
+target_include_directories(Gui PRIVATE "can" "gps" "gps/msgs")

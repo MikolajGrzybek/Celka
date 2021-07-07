@@ -1,0 +1,10 @@
+QPushButton {
+    background-color: transparent;
+    border-image:     url(:resources/switch/black_off.png) 2 5 2 5;
+    min-width:        80px;
+}
+
+QPushButton:checked {
+    background-color: transparent;
+    border-image:     url(:resources/switch/black_on.png) 2 5 2 5;
+}

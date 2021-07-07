@@ -69,178 +69,37 @@ include CMakeFiles/Gui.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Gui.dir/flags.make
 
-CMakeFiles/Gui.dir/lib/e-Paper/EPD_IT8951.c.o: CMakeFiles/Gui.dir/flags.make
-CMakeFiles/Gui.dir/lib/e-Paper/EPD_IT8951.c.o: ../lib/e-Paper/EPD_IT8951.c
-CMakeFiles/Gui.dir/lib/e-Paper/EPD_IT8951.c.o: CMakeFiles/Gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Gui.dir/lib/e-Paper/EPD_IT8951.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Gui.dir/lib/e-Paper/EPD_IT8951.c.o -MF CMakeFiles/Gui.dir/lib/e-Paper/EPD_IT8951.c.o.d -o CMakeFiles/Gui.dir/lib/e-Paper/EPD_IT8951.c.o -c /home/mikolaj/Documents/Embeded-C/lib/e-Paper/EPD_IT8951.c
+Gui_autogen/EWIEGA46WW/qrc_resources.cpp: ../resources.qrc
+Gui_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/Gui_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
+Gui_autogen/EWIEGA46WW/qrc_resources.cpp: ../resources/logoSolar.png
+Gui_autogen/EWIEGA46WW/qrc_resources.cpp: ../resources/gps/fix.png
+Gui_autogen/EWIEGA46WW/qrc_resources.cpp: ../resources/gps/no_fix.png
+Gui_autogen/EWIEGA46WW/qrc_resources.cpp: ../resources/switch/black_on.png
+Gui_autogen/EWIEGA46WW/qrc_resources.cpp: ../resources/switch/ON.jpg
+Gui_autogen/EWIEGA46WW/qrc_resources.cpp: ../resources/switch/OFF.jpg
+Gui_autogen/EWIEGA46WW/qrc_resources.cpp: ../resources/switch/black_off.png
+Gui_autogen/EWIEGA46WW/qrc_resources.cpp: /usr/bin/rcc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic RCC for resources.qrc"
+	/usr/bin/cmake -E cmake_autorcc /home/mikolaj/Documents/Embeded-C/build/CMakeFiles/Gui_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json 
 
-CMakeFiles/Gui.dir/lib/e-Paper/EPD_IT8951.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Gui.dir/lib/e-Paper/EPD_IT8951.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mikolaj/Documents/Embeded-C/lib/e-Paper/EPD_IT8951.c > CMakeFiles/Gui.dir/lib/e-Paper/EPD_IT8951.c.i
+CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.o: CMakeFiles/Gui.dir/flags.make
+CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.o: Gui_autogen/mocs_compilation.cpp
+CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.o: CMakeFiles/Gui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.o -MF CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.o -c /home/mikolaj/Documents/Embeded-C/build/Gui_autogen/mocs_compilation.cpp
 
-CMakeFiles/Gui.dir/lib/e-Paper/EPD_IT8951.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Gui.dir/lib/e-Paper/EPD_IT8951.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mikolaj/Documents/Embeded-C/lib/e-Paper/EPD_IT8951.c -o CMakeFiles/Gui.dir/lib/e-Paper/EPD_IT8951.c.s
+CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikolaj/Documents/Embeded-C/build/Gui_autogen/mocs_compilation.cpp > CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.i
 
-CMakeFiles/Gui.dir/lib/GUI/GUI_BMPfile.c.o: CMakeFiles/Gui.dir/flags.make
-CMakeFiles/Gui.dir/lib/GUI/GUI_BMPfile.c.o: ../lib/GUI/GUI_BMPfile.c
-CMakeFiles/Gui.dir/lib/GUI/GUI_BMPfile.c.o: CMakeFiles/Gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Gui.dir/lib/GUI/GUI_BMPfile.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Gui.dir/lib/GUI/GUI_BMPfile.c.o -MF CMakeFiles/Gui.dir/lib/GUI/GUI_BMPfile.c.o.d -o CMakeFiles/Gui.dir/lib/GUI/GUI_BMPfile.c.o -c /home/mikolaj/Documents/Embeded-C/lib/GUI/GUI_BMPfile.c
-
-CMakeFiles/Gui.dir/lib/GUI/GUI_BMPfile.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Gui.dir/lib/GUI/GUI_BMPfile.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mikolaj/Documents/Embeded-C/lib/GUI/GUI_BMPfile.c > CMakeFiles/Gui.dir/lib/GUI/GUI_BMPfile.c.i
-
-CMakeFiles/Gui.dir/lib/GUI/GUI_BMPfile.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Gui.dir/lib/GUI/GUI_BMPfile.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mikolaj/Documents/Embeded-C/lib/GUI/GUI_BMPfile.c -o CMakeFiles/Gui.dir/lib/GUI/GUI_BMPfile.c.s
-
-CMakeFiles/Gui.dir/lib/GUI/GUI_Paint.c.o: CMakeFiles/Gui.dir/flags.make
-CMakeFiles/Gui.dir/lib/GUI/GUI_Paint.c.o: ../lib/GUI/GUI_Paint.c
-CMakeFiles/Gui.dir/lib/GUI/GUI_Paint.c.o: CMakeFiles/Gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Gui.dir/lib/GUI/GUI_Paint.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Gui.dir/lib/GUI/GUI_Paint.c.o -MF CMakeFiles/Gui.dir/lib/GUI/GUI_Paint.c.o.d -o CMakeFiles/Gui.dir/lib/GUI/GUI_Paint.c.o -c /home/mikolaj/Documents/Embeded-C/lib/GUI/GUI_Paint.c
-
-CMakeFiles/Gui.dir/lib/GUI/GUI_Paint.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Gui.dir/lib/GUI/GUI_Paint.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mikolaj/Documents/Embeded-C/lib/GUI/GUI_Paint.c > CMakeFiles/Gui.dir/lib/GUI/GUI_Paint.c.i
-
-CMakeFiles/Gui.dir/lib/GUI/GUI_Paint.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Gui.dir/lib/GUI/GUI_Paint.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mikolaj/Documents/Embeded-C/lib/GUI/GUI_Paint.c -o CMakeFiles/Gui.dir/lib/GUI/GUI_Paint.c.s
-
-CMakeFiles/Gui.dir/lib/Fonts/font8.c.o: CMakeFiles/Gui.dir/flags.make
-CMakeFiles/Gui.dir/lib/Fonts/font8.c.o: ../lib/Fonts/font8.c
-CMakeFiles/Gui.dir/lib/Fonts/font8.c.o: CMakeFiles/Gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Gui.dir/lib/Fonts/font8.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Gui.dir/lib/Fonts/font8.c.o -MF CMakeFiles/Gui.dir/lib/Fonts/font8.c.o.d -o CMakeFiles/Gui.dir/lib/Fonts/font8.c.o -c /home/mikolaj/Documents/Embeded-C/lib/Fonts/font8.c
-
-CMakeFiles/Gui.dir/lib/Fonts/font8.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Gui.dir/lib/Fonts/font8.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mikolaj/Documents/Embeded-C/lib/Fonts/font8.c > CMakeFiles/Gui.dir/lib/Fonts/font8.c.i
-
-CMakeFiles/Gui.dir/lib/Fonts/font8.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Gui.dir/lib/Fonts/font8.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mikolaj/Documents/Embeded-C/lib/Fonts/font8.c -o CMakeFiles/Gui.dir/lib/Fonts/font8.c.s
-
-CMakeFiles/Gui.dir/lib/Fonts/font12.c.o: CMakeFiles/Gui.dir/flags.make
-CMakeFiles/Gui.dir/lib/Fonts/font12.c.o: ../lib/Fonts/font12.c
-CMakeFiles/Gui.dir/lib/Fonts/font12.c.o: CMakeFiles/Gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/Gui.dir/lib/Fonts/font12.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Gui.dir/lib/Fonts/font12.c.o -MF CMakeFiles/Gui.dir/lib/Fonts/font12.c.o.d -o CMakeFiles/Gui.dir/lib/Fonts/font12.c.o -c /home/mikolaj/Documents/Embeded-C/lib/Fonts/font12.c
-
-CMakeFiles/Gui.dir/lib/Fonts/font12.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Gui.dir/lib/Fonts/font12.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mikolaj/Documents/Embeded-C/lib/Fonts/font12.c > CMakeFiles/Gui.dir/lib/Fonts/font12.c.i
-
-CMakeFiles/Gui.dir/lib/Fonts/font12.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Gui.dir/lib/Fonts/font12.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mikolaj/Documents/Embeded-C/lib/Fonts/font12.c -o CMakeFiles/Gui.dir/lib/Fonts/font12.c.s
-
-CMakeFiles/Gui.dir/lib/Fonts/font12CN.c.o: CMakeFiles/Gui.dir/flags.make
-CMakeFiles/Gui.dir/lib/Fonts/font12CN.c.o: ../lib/Fonts/font12CN.c
-CMakeFiles/Gui.dir/lib/Fonts/font12CN.c.o: CMakeFiles/Gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Gui.dir/lib/Fonts/font12CN.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Gui.dir/lib/Fonts/font12CN.c.o -MF CMakeFiles/Gui.dir/lib/Fonts/font12CN.c.o.d -o CMakeFiles/Gui.dir/lib/Fonts/font12CN.c.o -c /home/mikolaj/Documents/Embeded-C/lib/Fonts/font12CN.c
-
-CMakeFiles/Gui.dir/lib/Fonts/font12CN.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Gui.dir/lib/Fonts/font12CN.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mikolaj/Documents/Embeded-C/lib/Fonts/font12CN.c > CMakeFiles/Gui.dir/lib/Fonts/font12CN.c.i
-
-CMakeFiles/Gui.dir/lib/Fonts/font12CN.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Gui.dir/lib/Fonts/font12CN.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mikolaj/Documents/Embeded-C/lib/Fonts/font12CN.c -o CMakeFiles/Gui.dir/lib/Fonts/font12CN.c.s
-
-CMakeFiles/Gui.dir/lib/Fonts/font16.c.o: CMakeFiles/Gui.dir/flags.make
-CMakeFiles/Gui.dir/lib/Fonts/font16.c.o: ../lib/Fonts/font16.c
-CMakeFiles/Gui.dir/lib/Fonts/font16.c.o: CMakeFiles/Gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Gui.dir/lib/Fonts/font16.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Gui.dir/lib/Fonts/font16.c.o -MF CMakeFiles/Gui.dir/lib/Fonts/font16.c.o.d -o CMakeFiles/Gui.dir/lib/Fonts/font16.c.o -c /home/mikolaj/Documents/Embeded-C/lib/Fonts/font16.c
-
-CMakeFiles/Gui.dir/lib/Fonts/font16.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Gui.dir/lib/Fonts/font16.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mikolaj/Documents/Embeded-C/lib/Fonts/font16.c > CMakeFiles/Gui.dir/lib/Fonts/font16.c.i
-
-CMakeFiles/Gui.dir/lib/Fonts/font16.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Gui.dir/lib/Fonts/font16.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mikolaj/Documents/Embeded-C/lib/Fonts/font16.c -o CMakeFiles/Gui.dir/lib/Fonts/font16.c.s
-
-CMakeFiles/Gui.dir/lib/Fonts/font20.c.o: CMakeFiles/Gui.dir/flags.make
-CMakeFiles/Gui.dir/lib/Fonts/font20.c.o: ../lib/Fonts/font20.c
-CMakeFiles/Gui.dir/lib/Fonts/font20.c.o: CMakeFiles/Gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Gui.dir/lib/Fonts/font20.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Gui.dir/lib/Fonts/font20.c.o -MF CMakeFiles/Gui.dir/lib/Fonts/font20.c.o.d -o CMakeFiles/Gui.dir/lib/Fonts/font20.c.o -c /home/mikolaj/Documents/Embeded-C/lib/Fonts/font20.c
-
-CMakeFiles/Gui.dir/lib/Fonts/font20.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Gui.dir/lib/Fonts/font20.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mikolaj/Documents/Embeded-C/lib/Fonts/font20.c > CMakeFiles/Gui.dir/lib/Fonts/font20.c.i
-
-CMakeFiles/Gui.dir/lib/Fonts/font20.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Gui.dir/lib/Fonts/font20.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mikolaj/Documents/Embeded-C/lib/Fonts/font20.c -o CMakeFiles/Gui.dir/lib/Fonts/font20.c.s
-
-CMakeFiles/Gui.dir/lib/Fonts/font24.c.o: CMakeFiles/Gui.dir/flags.make
-CMakeFiles/Gui.dir/lib/Fonts/font24.c.o: ../lib/Fonts/font24.c
-CMakeFiles/Gui.dir/lib/Fonts/font24.c.o: CMakeFiles/Gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Gui.dir/lib/Fonts/font24.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Gui.dir/lib/Fonts/font24.c.o -MF CMakeFiles/Gui.dir/lib/Fonts/font24.c.o.d -o CMakeFiles/Gui.dir/lib/Fonts/font24.c.o -c /home/mikolaj/Documents/Embeded-C/lib/Fonts/font24.c
-
-CMakeFiles/Gui.dir/lib/Fonts/font24.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Gui.dir/lib/Fonts/font24.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mikolaj/Documents/Embeded-C/lib/Fonts/font24.c > CMakeFiles/Gui.dir/lib/Fonts/font24.c.i
-
-CMakeFiles/Gui.dir/lib/Fonts/font24.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Gui.dir/lib/Fonts/font24.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mikolaj/Documents/Embeded-C/lib/Fonts/font24.c -o CMakeFiles/Gui.dir/lib/Fonts/font24.c.s
-
-CMakeFiles/Gui.dir/lib/Fonts/font24CN.c.o: CMakeFiles/Gui.dir/flags.make
-CMakeFiles/Gui.dir/lib/Fonts/font24CN.c.o: ../lib/Fonts/font24CN.c
-CMakeFiles/Gui.dir/lib/Fonts/font24CN.c.o: CMakeFiles/Gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Gui.dir/lib/Fonts/font24CN.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Gui.dir/lib/Fonts/font24CN.c.o -MF CMakeFiles/Gui.dir/lib/Fonts/font24CN.c.o.d -o CMakeFiles/Gui.dir/lib/Fonts/font24CN.c.o -c /home/mikolaj/Documents/Embeded-C/lib/Fonts/font24CN.c
-
-CMakeFiles/Gui.dir/lib/Fonts/font24CN.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Gui.dir/lib/Fonts/font24CN.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mikolaj/Documents/Embeded-C/lib/Fonts/font24CN.c > CMakeFiles/Gui.dir/lib/Fonts/font24CN.c.i
-
-CMakeFiles/Gui.dir/lib/Fonts/font24CN.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Gui.dir/lib/Fonts/font24CN.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mikolaj/Documents/Embeded-C/lib/Fonts/font24CN.c -o CMakeFiles/Gui.dir/lib/Fonts/font24CN.c.s
-
-CMakeFiles/Gui.dir/lib/Config/DEV_Config.c.o: CMakeFiles/Gui.dir/flags.make
-CMakeFiles/Gui.dir/lib/Config/DEV_Config.c.o: ../lib/Config/DEV_Config.c
-CMakeFiles/Gui.dir/lib/Config/DEV_Config.c.o: CMakeFiles/Gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Gui.dir/lib/Config/DEV_Config.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Gui.dir/lib/Config/DEV_Config.c.o -MF CMakeFiles/Gui.dir/lib/Config/DEV_Config.c.o.d -o CMakeFiles/Gui.dir/lib/Config/DEV_Config.c.o -c /home/mikolaj/Documents/Embeded-C/lib/Config/DEV_Config.c
-
-CMakeFiles/Gui.dir/lib/Config/DEV_Config.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Gui.dir/lib/Config/DEV_Config.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mikolaj/Documents/Embeded-C/lib/Config/DEV_Config.c > CMakeFiles/Gui.dir/lib/Config/DEV_Config.c.i
-
-CMakeFiles/Gui.dir/lib/Config/DEV_Config.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Gui.dir/lib/Config/DEV_Config.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mikolaj/Documents/Embeded-C/lib/Config/DEV_Config.c -o CMakeFiles/Gui.dir/lib/Config/DEV_Config.c.s
-
-CMakeFiles/Gui.dir/lib/bcm2835/bcm2835.c.o: CMakeFiles/Gui.dir/flags.make
-CMakeFiles/Gui.dir/lib/bcm2835/bcm2835.c.o: ../lib/bcm2835/bcm2835.c
-CMakeFiles/Gui.dir/lib/bcm2835/bcm2835.c.o: CMakeFiles/Gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Gui.dir/lib/bcm2835/bcm2835.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Gui.dir/lib/bcm2835/bcm2835.c.o -MF CMakeFiles/Gui.dir/lib/bcm2835/bcm2835.c.o.d -o CMakeFiles/Gui.dir/lib/bcm2835/bcm2835.c.o -c /home/mikolaj/Documents/Embeded-C/lib/bcm2835/bcm2835.c
-
-CMakeFiles/Gui.dir/lib/bcm2835/bcm2835.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Gui.dir/lib/bcm2835/bcm2835.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mikolaj/Documents/Embeded-C/lib/bcm2835/bcm2835.c > CMakeFiles/Gui.dir/lib/bcm2835/bcm2835.c.i
-
-CMakeFiles/Gui.dir/lib/bcm2835/bcm2835.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Gui.dir/lib/bcm2835/bcm2835.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mikolaj/Documents/Embeded-C/lib/bcm2835/bcm2835.c -o CMakeFiles/Gui.dir/lib/bcm2835/bcm2835.c.s
+CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikolaj/Documents/Embeded-C/build/Gui_autogen/mocs_compilation.cpp -o CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/Gui.dir/main.cpp.o: CMakeFiles/Gui.dir/flags.make
 CMakeFiles/Gui.dir/main.cpp.o: ../main.cpp
 CMakeFiles/Gui.dir/main.cpp.o: CMakeFiles/Gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Gui.dir/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Gui.dir/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gui.dir/main.cpp.o -MF CMakeFiles/Gui.dir/main.cpp.o.d -o CMakeFiles/Gui.dir/main.cpp.o -c /home/mikolaj/Documents/Embeded-C/main.cpp
 
 CMakeFiles/Gui.dir/main.cpp.i: cmake_force
@@ -254,7 +113,7 @@ CMakeFiles/Gui.dir/main.cpp.s: cmake_force
 CMakeFiles/Gui.dir/gui.cpp.o: CMakeFiles/Gui.dir/flags.make
 CMakeFiles/Gui.dir/gui.cpp.o: ../gui.cpp
 CMakeFiles/Gui.dir/gui.cpp.o: CMakeFiles/Gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Gui.dir/gui.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Gui.dir/gui.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gui.dir/gui.cpp.o -MF CMakeFiles/Gui.dir/gui.cpp.o.d -o CMakeFiles/Gui.dir/gui.cpp.o -c /home/mikolaj/Documents/Embeded-C/gui.cpp
 
 CMakeFiles/Gui.dir/gui.cpp.i: cmake_force
@@ -265,43 +124,136 @@ CMakeFiles/Gui.dir/gui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gui.dir/gui.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikolaj/Documents/Embeded-C/gui.cpp -o CMakeFiles/Gui.dir/gui.cpp.s
 
+CMakeFiles/Gui.dir/mav.cpp.o: CMakeFiles/Gui.dir/flags.make
+CMakeFiles/Gui.dir/mav.cpp.o: ../mav.cpp
+CMakeFiles/Gui.dir/mav.cpp.o: CMakeFiles/Gui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Gui.dir/mav.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gui.dir/mav.cpp.o -MF CMakeFiles/Gui.dir/mav.cpp.o.d -o CMakeFiles/Gui.dir/mav.cpp.o -c /home/mikolaj/Documents/Embeded-C/mav.cpp
+
+CMakeFiles/Gui.dir/mav.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gui.dir/mav.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikolaj/Documents/Embeded-C/mav.cpp > CMakeFiles/Gui.dir/mav.cpp.i
+
+CMakeFiles/Gui.dir/mav.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gui.dir/mav.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikolaj/Documents/Embeded-C/mav.cpp -o CMakeFiles/Gui.dir/mav.cpp.s
+
+CMakeFiles/Gui.dir/can/can.cpp.o: CMakeFiles/Gui.dir/flags.make
+CMakeFiles/Gui.dir/can/can.cpp.o: ../can/can.cpp
+CMakeFiles/Gui.dir/can/can.cpp.o: CMakeFiles/Gui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Gui.dir/can/can.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gui.dir/can/can.cpp.o -MF CMakeFiles/Gui.dir/can/can.cpp.o.d -o CMakeFiles/Gui.dir/can/can.cpp.o -c /home/mikolaj/Documents/Embeded-C/can/can.cpp
+
+CMakeFiles/Gui.dir/can/can.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gui.dir/can/can.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikolaj/Documents/Embeded-C/can/can.cpp > CMakeFiles/Gui.dir/can/can.cpp.i
+
+CMakeFiles/Gui.dir/can/can.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gui.dir/can/can.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikolaj/Documents/Embeded-C/can/can.cpp -o CMakeFiles/Gui.dir/can/can.cpp.s
+
+CMakeFiles/Gui.dir/can/utils.cpp.o: CMakeFiles/Gui.dir/flags.make
+CMakeFiles/Gui.dir/can/utils.cpp.o: ../can/utils.cpp
+CMakeFiles/Gui.dir/can/utils.cpp.o: CMakeFiles/Gui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Gui.dir/can/utils.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gui.dir/can/utils.cpp.o -MF CMakeFiles/Gui.dir/can/utils.cpp.o.d -o CMakeFiles/Gui.dir/can/utils.cpp.o -c /home/mikolaj/Documents/Embeded-C/can/utils.cpp
+
+CMakeFiles/Gui.dir/can/utils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gui.dir/can/utils.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikolaj/Documents/Embeded-C/can/utils.cpp > CMakeFiles/Gui.dir/can/utils.cpp.i
+
+CMakeFiles/Gui.dir/can/utils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gui.dir/can/utils.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikolaj/Documents/Embeded-C/can/utils.cpp -o CMakeFiles/Gui.dir/can/utils.cpp.s
+
+CMakeFiles/Gui.dir/serialport/serialport.cpp.o: CMakeFiles/Gui.dir/flags.make
+CMakeFiles/Gui.dir/serialport/serialport.cpp.o: ../serialport/serialport.cpp
+CMakeFiles/Gui.dir/serialport/serialport.cpp.o: CMakeFiles/Gui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Gui.dir/serialport/serialport.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gui.dir/serialport/serialport.cpp.o -MF CMakeFiles/Gui.dir/serialport/serialport.cpp.o.d -o CMakeFiles/Gui.dir/serialport/serialport.cpp.o -c /home/mikolaj/Documents/Embeded-C/serialport/serialport.cpp
+
+CMakeFiles/Gui.dir/serialport/serialport.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gui.dir/serialport/serialport.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikolaj/Documents/Embeded-C/serialport/serialport.cpp > CMakeFiles/Gui.dir/serialport/serialport.cpp.i
+
+CMakeFiles/Gui.dir/serialport/serialport.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gui.dir/serialport/serialport.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikolaj/Documents/Embeded-C/serialport/serialport.cpp -o CMakeFiles/Gui.dir/serialport/serialport.cpp.s
+
+CMakeFiles/Gui.dir/gps/gps.cpp.o: CMakeFiles/Gui.dir/flags.make
+CMakeFiles/Gui.dir/gps/gps.cpp.o: ../gps/gps.cpp
+CMakeFiles/Gui.dir/gps/gps.cpp.o: CMakeFiles/Gui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Gui.dir/gps/gps.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gui.dir/gps/gps.cpp.o -MF CMakeFiles/Gui.dir/gps/gps.cpp.o.d -o CMakeFiles/Gui.dir/gps/gps.cpp.o -c /home/mikolaj/Documents/Embeded-C/gps/gps.cpp
+
+CMakeFiles/Gui.dir/gps/gps.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gui.dir/gps/gps.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikolaj/Documents/Embeded-C/gps/gps.cpp > CMakeFiles/Gui.dir/gps/gps.cpp.i
+
+CMakeFiles/Gui.dir/gps/gps.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gui.dir/gps/gps.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikolaj/Documents/Embeded-C/gps/gps.cpp -o CMakeFiles/Gui.dir/gps/gps.cpp.s
+
+CMakeFiles/Gui.dir/gps/parser.cpp.o: CMakeFiles/Gui.dir/flags.make
+CMakeFiles/Gui.dir/gps/parser.cpp.o: ../gps/parser.cpp
+CMakeFiles/Gui.dir/gps/parser.cpp.o: CMakeFiles/Gui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Gui.dir/gps/parser.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gui.dir/gps/parser.cpp.o -MF CMakeFiles/Gui.dir/gps/parser.cpp.o.d -o CMakeFiles/Gui.dir/gps/parser.cpp.o -c /home/mikolaj/Documents/Embeded-C/gps/parser.cpp
+
+CMakeFiles/Gui.dir/gps/parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gui.dir/gps/parser.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikolaj/Documents/Embeded-C/gps/parser.cpp > CMakeFiles/Gui.dir/gps/parser.cpp.i
+
+CMakeFiles/Gui.dir/gps/parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gui.dir/gps/parser.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikolaj/Documents/Embeded-C/gps/parser.cpp -o CMakeFiles/Gui.dir/gps/parser.cpp.s
+
+CMakeFiles/Gui.dir/Gui_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/Gui.dir/flags.make
+CMakeFiles/Gui.dir/Gui_autogen/EWIEGA46WW/qrc_resources.cpp.o: Gui_autogen/EWIEGA46WW/qrc_resources.cpp
+CMakeFiles/Gui.dir/Gui_autogen/EWIEGA46WW/qrc_resources.cpp.o: CMakeFiles/Gui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/Gui.dir/Gui_autogen/EWIEGA46WW/qrc_resources.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Gui.dir/Gui_autogen/EWIEGA46WW/qrc_resources.cpp.o -MF CMakeFiles/Gui.dir/Gui_autogen/EWIEGA46WW/qrc_resources.cpp.o.d -o CMakeFiles/Gui.dir/Gui_autogen/EWIEGA46WW/qrc_resources.cpp.o -c /home/mikolaj/Documents/Embeded-C/build/Gui_autogen/EWIEGA46WW/qrc_resources.cpp
+
+CMakeFiles/Gui.dir/Gui_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Gui.dir/Gui_autogen/EWIEGA46WW/qrc_resources.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mikolaj/Documents/Embeded-C/build/Gui_autogen/EWIEGA46WW/qrc_resources.cpp > CMakeFiles/Gui.dir/Gui_autogen/EWIEGA46WW/qrc_resources.cpp.i
+
+CMakeFiles/Gui.dir/Gui_autogen/EWIEGA46WW/qrc_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Gui.dir/Gui_autogen/EWIEGA46WW/qrc_resources.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mikolaj/Documents/Embeded-C/build/Gui_autogen/EWIEGA46WW/qrc_resources.cpp -o CMakeFiles/Gui.dir/Gui_autogen/EWIEGA46WW/qrc_resources.cpp.s
+
 # Object files for target Gui
 Gui_OBJECTS = \
-"CMakeFiles/Gui.dir/lib/e-Paper/EPD_IT8951.c.o" \
-"CMakeFiles/Gui.dir/lib/GUI/GUI_BMPfile.c.o" \
-"CMakeFiles/Gui.dir/lib/GUI/GUI_Paint.c.o" \
-"CMakeFiles/Gui.dir/lib/Fonts/font8.c.o" \
-"CMakeFiles/Gui.dir/lib/Fonts/font12.c.o" \
-"CMakeFiles/Gui.dir/lib/Fonts/font12CN.c.o" \
-"CMakeFiles/Gui.dir/lib/Fonts/font16.c.o" \
-"CMakeFiles/Gui.dir/lib/Fonts/font20.c.o" \
-"CMakeFiles/Gui.dir/lib/Fonts/font24.c.o" \
-"CMakeFiles/Gui.dir/lib/Fonts/font24CN.c.o" \
-"CMakeFiles/Gui.dir/lib/Config/DEV_Config.c.o" \
-"CMakeFiles/Gui.dir/lib/bcm2835/bcm2835.c.o" \
+"CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/Gui.dir/main.cpp.o" \
-"CMakeFiles/Gui.dir/gui.cpp.o"
+"CMakeFiles/Gui.dir/gui.cpp.o" \
+"CMakeFiles/Gui.dir/mav.cpp.o" \
+"CMakeFiles/Gui.dir/can/can.cpp.o" \
+"CMakeFiles/Gui.dir/can/utils.cpp.o" \
+"CMakeFiles/Gui.dir/serialport/serialport.cpp.o" \
+"CMakeFiles/Gui.dir/gps/gps.cpp.o" \
+"CMakeFiles/Gui.dir/gps/parser.cpp.o" \
+"CMakeFiles/Gui.dir/Gui_autogen/EWIEGA46WW/qrc_resources.cpp.o"
 
 # External object files for target Gui
 Gui_EXTERNAL_OBJECTS =
 
-Gui: CMakeFiles/Gui.dir/lib/e-Paper/EPD_IT8951.c.o
-Gui: CMakeFiles/Gui.dir/lib/GUI/GUI_BMPfile.c.o
-Gui: CMakeFiles/Gui.dir/lib/GUI/GUI_Paint.c.o
-Gui: CMakeFiles/Gui.dir/lib/Fonts/font8.c.o
-Gui: CMakeFiles/Gui.dir/lib/Fonts/font12.c.o
-Gui: CMakeFiles/Gui.dir/lib/Fonts/font12CN.c.o
-Gui: CMakeFiles/Gui.dir/lib/Fonts/font16.c.o
-Gui: CMakeFiles/Gui.dir/lib/Fonts/font20.c.o
-Gui: CMakeFiles/Gui.dir/lib/Fonts/font24.c.o
-Gui: CMakeFiles/Gui.dir/lib/Fonts/font24CN.c.o
-Gui: CMakeFiles/Gui.dir/lib/Config/DEV_Config.c.o
-Gui: CMakeFiles/Gui.dir/lib/bcm2835/bcm2835.c.o
+Gui: CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.o
 Gui: CMakeFiles/Gui.dir/main.cpp.o
 Gui: CMakeFiles/Gui.dir/gui.cpp.o
+Gui: CMakeFiles/Gui.dir/mav.cpp.o
+Gui: CMakeFiles/Gui.dir/can/can.cpp.o
+Gui: CMakeFiles/Gui.dir/can/utils.cpp.o
+Gui: CMakeFiles/Gui.dir/serialport/serialport.cpp.o
+Gui: CMakeFiles/Gui.dir/gps/gps.cpp.o
+Gui: CMakeFiles/Gui.dir/gps/parser.cpp.o
+Gui: CMakeFiles/Gui.dir/Gui_autogen/EWIEGA46WW/qrc_resources.cpp.o
 Gui: CMakeFiles/Gui.dir/build.make
+Gui: /usr/lib/libQt5Widgets.so.5.15.2
+Gui: /usr/lib/libQt5Gui.so.5.15.2
+Gui: /usr/lib/libQt5Core.so.5.15.2
 Gui: CMakeFiles/Gui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable Gui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Gui"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Gui.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -312,7 +264,7 @@ CMakeFiles/Gui.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/Gui.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/Gui.dir/clean
 
-CMakeFiles/Gui.dir/depend:
+CMakeFiles/Gui.dir/depend: Gui_autogen/EWIEGA46WW/qrc_resources.cpp
 	cd /home/mikolaj/Documents/Embeded-C/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mikolaj/Documents/Embeded-C /home/mikolaj/Documents/Embeded-C /home/mikolaj/Documents/Embeded-C/build /home/mikolaj/Documents/Embeded-C/build /home/mikolaj/Documents/Embeded-C/build/CMakeFiles/Gui.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Gui.dir/depend
 

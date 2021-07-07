@@ -1,0 +1,27 @@
+{
+    "parameters": {
+        "Foil BL": 3,
+        "Foil BR": -1.2,
+        "Foil FL": 10.1,
+        "Foil FR": 11.2,
+        "Foiling height": 0,
+        "Height D": 0,
+        "Height I": 0,
+        "Height P": 1,
+        "Liftoff angle": 0,
+        "Pitch D": 0,
+        "Pitch I": 0,
+        "Pitch P": 0,
+        "Roll D": 0,
+        "Roll I": 0,
+        "Roll P": 0,
+        "Serwo BL": 0,
+        "Serwo BR": 0,
+        "Serwo TL": 0,
+        "Serwo TR": 0,
+        "Starting height": 0,
+        "Tempomat D": 0,
+        "Tempomat I": 0,
+        "Tempomat P": 0
+    }
+}

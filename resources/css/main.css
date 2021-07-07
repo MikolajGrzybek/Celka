@@ -1,0 +1,61 @@
+/*  Main CSS file */
+
+/* I wish import statements would works ... */
+/* import LCD Number style */
+@import "lcd.css";
+
+/* Progres Bar style */
+@import "progressBar.css";
+
+/* Push Button style */
+@import "pushButton.css";
+
+/* import Switch Button style */
+/* @import "switchButton.css"; */
+
+
+/* LCD Number style */
+QLCDNumber{
+    border:         3px solid grey;
+    border-radius:  6px;
+    padding:        50px;
+    text-align:     center;
+    color:           red;
+}
+
+/* Progres Bar style */
+QProgressBar{
+    border:        3px solid grey;
+    border-radius: 5px;
+    text-align:    center;
+    color:         white;
+}
+
+QProgressBar::chunk{
+    background-color: #05B8CC;
+    margin:           0.5px;
+    border-radius:    3px;
+}
+
+/* Push Button style */
+QPushButton {
+    border:            3px solid #8f8f91;
+    border-radius:     6px;
+    
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #dadbde,stop: 1 #f6f7fa);
+    /* color:           black; */
+}
+
+QPushButton:pressed {
+    /* background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,stop: 0 #dadbde,stop: 1 #f6f7fa); */
+    background-color: yellow;
+    color:           red;
+}
+
+QPushButton:flat {
+    border: none;
+}
+
+QPushButton:default {
+    border-color: navy;
+}
