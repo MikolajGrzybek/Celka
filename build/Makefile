@@ -214,6 +214,294 @@ can/utils.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/can/utils.cpp.s
 .PHONY : can/utils.cpp.s
 
+epaper/Config/DEV_Config.o: epaper/Config/DEV_Config.c.o
+.PHONY : epaper/Config/DEV_Config.o
+
+# target to build an object file
+epaper/Config/DEV_Config.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Config/DEV_Config.c.o
+.PHONY : epaper/Config/DEV_Config.c.o
+
+epaper/Config/DEV_Config.i: epaper/Config/DEV_Config.c.i
+.PHONY : epaper/Config/DEV_Config.i
+
+# target to preprocess a source file
+epaper/Config/DEV_Config.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Config/DEV_Config.c.i
+.PHONY : epaper/Config/DEV_Config.c.i
+
+epaper/Config/DEV_Config.s: epaper/Config/DEV_Config.c.s
+.PHONY : epaper/Config/DEV_Config.s
+
+# target to generate assembly for a file
+epaper/Config/DEV_Config.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Config/DEV_Config.c.s
+.PHONY : epaper/Config/DEV_Config.c.s
+
+epaper/Fonts/font12.o: epaper/Fonts/font12.c.o
+.PHONY : epaper/Fonts/font12.o
+
+# target to build an object file
+epaper/Fonts/font12.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font12.c.o
+.PHONY : epaper/Fonts/font12.c.o
+
+epaper/Fonts/font12.i: epaper/Fonts/font12.c.i
+.PHONY : epaper/Fonts/font12.i
+
+# target to preprocess a source file
+epaper/Fonts/font12.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font12.c.i
+.PHONY : epaper/Fonts/font12.c.i
+
+epaper/Fonts/font12.s: epaper/Fonts/font12.c.s
+.PHONY : epaper/Fonts/font12.s
+
+# target to generate assembly for a file
+epaper/Fonts/font12.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font12.c.s
+.PHONY : epaper/Fonts/font12.c.s
+
+epaper/Fonts/font12CN.o: epaper/Fonts/font12CN.c.o
+.PHONY : epaper/Fonts/font12CN.o
+
+# target to build an object file
+epaper/Fonts/font12CN.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font12CN.c.o
+.PHONY : epaper/Fonts/font12CN.c.o
+
+epaper/Fonts/font12CN.i: epaper/Fonts/font12CN.c.i
+.PHONY : epaper/Fonts/font12CN.i
+
+# target to preprocess a source file
+epaper/Fonts/font12CN.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font12CN.c.i
+.PHONY : epaper/Fonts/font12CN.c.i
+
+epaper/Fonts/font12CN.s: epaper/Fonts/font12CN.c.s
+.PHONY : epaper/Fonts/font12CN.s
+
+# target to generate assembly for a file
+epaper/Fonts/font12CN.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font12CN.c.s
+.PHONY : epaper/Fonts/font12CN.c.s
+
+epaper/Fonts/font16.o: epaper/Fonts/font16.c.o
+.PHONY : epaper/Fonts/font16.o
+
+# target to build an object file
+epaper/Fonts/font16.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font16.c.o
+.PHONY : epaper/Fonts/font16.c.o
+
+epaper/Fonts/font16.i: epaper/Fonts/font16.c.i
+.PHONY : epaper/Fonts/font16.i
+
+# target to preprocess a source file
+epaper/Fonts/font16.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font16.c.i
+.PHONY : epaper/Fonts/font16.c.i
+
+epaper/Fonts/font16.s: epaper/Fonts/font16.c.s
+.PHONY : epaper/Fonts/font16.s
+
+# target to generate assembly for a file
+epaper/Fonts/font16.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font16.c.s
+.PHONY : epaper/Fonts/font16.c.s
+
+epaper/Fonts/font20.o: epaper/Fonts/font20.c.o
+.PHONY : epaper/Fonts/font20.o
+
+# target to build an object file
+epaper/Fonts/font20.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font20.c.o
+.PHONY : epaper/Fonts/font20.c.o
+
+epaper/Fonts/font20.i: epaper/Fonts/font20.c.i
+.PHONY : epaper/Fonts/font20.i
+
+# target to preprocess a source file
+epaper/Fonts/font20.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font20.c.i
+.PHONY : epaper/Fonts/font20.c.i
+
+epaper/Fonts/font20.s: epaper/Fonts/font20.c.s
+.PHONY : epaper/Fonts/font20.s
+
+# target to generate assembly for a file
+epaper/Fonts/font20.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font20.c.s
+.PHONY : epaper/Fonts/font20.c.s
+
+epaper/Fonts/font24.o: epaper/Fonts/font24.c.o
+.PHONY : epaper/Fonts/font24.o
+
+# target to build an object file
+epaper/Fonts/font24.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font24.c.o
+.PHONY : epaper/Fonts/font24.c.o
+
+epaper/Fonts/font24.i: epaper/Fonts/font24.c.i
+.PHONY : epaper/Fonts/font24.i
+
+# target to preprocess a source file
+epaper/Fonts/font24.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font24.c.i
+.PHONY : epaper/Fonts/font24.c.i
+
+epaper/Fonts/font24.s: epaper/Fonts/font24.c.s
+.PHONY : epaper/Fonts/font24.s
+
+# target to generate assembly for a file
+epaper/Fonts/font24.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font24.c.s
+.PHONY : epaper/Fonts/font24.c.s
+
+epaper/Fonts/font24CN.o: epaper/Fonts/font24CN.c.o
+.PHONY : epaper/Fonts/font24CN.o
+
+# target to build an object file
+epaper/Fonts/font24CN.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font24CN.c.o
+.PHONY : epaper/Fonts/font24CN.c.o
+
+epaper/Fonts/font24CN.i: epaper/Fonts/font24CN.c.i
+.PHONY : epaper/Fonts/font24CN.i
+
+# target to preprocess a source file
+epaper/Fonts/font24CN.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font24CN.c.i
+.PHONY : epaper/Fonts/font24CN.c.i
+
+epaper/Fonts/font24CN.s: epaper/Fonts/font24CN.c.s
+.PHONY : epaper/Fonts/font24CN.s
+
+# target to generate assembly for a file
+epaper/Fonts/font24CN.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font24CN.c.s
+.PHONY : epaper/Fonts/font24CN.c.s
+
+epaper/Fonts/font8.o: epaper/Fonts/font8.c.o
+.PHONY : epaper/Fonts/font8.o
+
+# target to build an object file
+epaper/Fonts/font8.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font8.c.o
+.PHONY : epaper/Fonts/font8.c.o
+
+epaper/Fonts/font8.i: epaper/Fonts/font8.c.i
+.PHONY : epaper/Fonts/font8.i
+
+# target to preprocess a source file
+epaper/Fonts/font8.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font8.c.i
+.PHONY : epaper/Fonts/font8.c.i
+
+epaper/Fonts/font8.s: epaper/Fonts/font8.c.s
+.PHONY : epaper/Fonts/font8.s
+
+# target to generate assembly for a file
+epaper/Fonts/font8.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font8.c.s
+.PHONY : epaper/Fonts/font8.c.s
+
+epaper/GUI/GUI_BMPfile.o: epaper/GUI/GUI_BMPfile.c.o
+.PHONY : epaper/GUI/GUI_BMPfile.o
+
+# target to build an object file
+epaper/GUI/GUI_BMPfile.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/GUI/GUI_BMPfile.c.o
+.PHONY : epaper/GUI/GUI_BMPfile.c.o
+
+epaper/GUI/GUI_BMPfile.i: epaper/GUI/GUI_BMPfile.c.i
+.PHONY : epaper/GUI/GUI_BMPfile.i
+
+# target to preprocess a source file
+epaper/GUI/GUI_BMPfile.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/GUI/GUI_BMPfile.c.i
+.PHONY : epaper/GUI/GUI_BMPfile.c.i
+
+epaper/GUI/GUI_BMPfile.s: epaper/GUI/GUI_BMPfile.c.s
+.PHONY : epaper/GUI/GUI_BMPfile.s
+
+# target to generate assembly for a file
+epaper/GUI/GUI_BMPfile.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/GUI/GUI_BMPfile.c.s
+.PHONY : epaper/GUI/GUI_BMPfile.c.s
+
+epaper/GUI/GUI_Paint.o: epaper/GUI/GUI_Paint.c.o
+.PHONY : epaper/GUI/GUI_Paint.o
+
+# target to build an object file
+epaper/GUI/GUI_Paint.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/GUI/GUI_Paint.c.o
+.PHONY : epaper/GUI/GUI_Paint.c.o
+
+epaper/GUI/GUI_Paint.i: epaper/GUI/GUI_Paint.c.i
+.PHONY : epaper/GUI/GUI_Paint.i
+
+# target to preprocess a source file
+epaper/GUI/GUI_Paint.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/GUI/GUI_Paint.c.i
+.PHONY : epaper/GUI/GUI_Paint.c.i
+
+epaper/GUI/GUI_Paint.s: epaper/GUI/GUI_Paint.c.s
+.PHONY : epaper/GUI/GUI_Paint.s
+
+# target to generate assembly for a file
+epaper/GUI/GUI_Paint.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/GUI/GUI_Paint.c.s
+.PHONY : epaper/GUI/GUI_Paint.c.s
+
+epaper/bcm2835/bcm2835.o: epaper/bcm2835/bcm2835.c.o
+.PHONY : epaper/bcm2835/bcm2835.o
+
+# target to build an object file
+epaper/bcm2835/bcm2835.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/bcm2835/bcm2835.c.o
+.PHONY : epaper/bcm2835/bcm2835.c.o
+
+epaper/bcm2835/bcm2835.i: epaper/bcm2835/bcm2835.c.i
+.PHONY : epaper/bcm2835/bcm2835.i
+
+# target to preprocess a source file
+epaper/bcm2835/bcm2835.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/bcm2835/bcm2835.c.i
+.PHONY : epaper/bcm2835/bcm2835.c.i
+
+epaper/bcm2835/bcm2835.s: epaper/bcm2835/bcm2835.c.s
+.PHONY : epaper/bcm2835/bcm2835.s
+
+# target to generate assembly for a file
+epaper/bcm2835/bcm2835.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/bcm2835/bcm2835.c.s
+.PHONY : epaper/bcm2835/bcm2835.c.s
+
+epaper/e-Paper/EPD_IT8951.o: epaper/e-Paper/EPD_IT8951.c.o
+.PHONY : epaper/e-Paper/EPD_IT8951.o
+
+# target to build an object file
+epaper/e-Paper/EPD_IT8951.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/e-Paper/EPD_IT8951.c.o
+.PHONY : epaper/e-Paper/EPD_IT8951.c.o
+
+epaper/e-Paper/EPD_IT8951.i: epaper/e-Paper/EPD_IT8951.c.i
+.PHONY : epaper/e-Paper/EPD_IT8951.i
+
+# target to preprocess a source file
+epaper/e-Paper/EPD_IT8951.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/e-Paper/EPD_IT8951.c.i
+.PHONY : epaper/e-Paper/EPD_IT8951.c.i
+
+epaper/e-Paper/EPD_IT8951.s: epaper/e-Paper/EPD_IT8951.c.s
+.PHONY : epaper/e-Paper/EPD_IT8951.s
+
+# target to generate assembly for a file
+epaper/e-Paper/EPD_IT8951.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/e-Paper/EPD_IT8951.c.s
+.PHONY : epaper/e-Paper/EPD_IT8951.c.s
+
 gps/gps.o: gps/gps.cpp.o
 .PHONY : gps/gps.o
 
@@ -377,6 +665,42 @@ help:
 	@echo "... can/utils.o"
 	@echo "... can/utils.i"
 	@echo "... can/utils.s"
+	@echo "... epaper/Config/DEV_Config.o"
+	@echo "... epaper/Config/DEV_Config.i"
+	@echo "... epaper/Config/DEV_Config.s"
+	@echo "... epaper/Fonts/font12.o"
+	@echo "... epaper/Fonts/font12.i"
+	@echo "... epaper/Fonts/font12.s"
+	@echo "... epaper/Fonts/font12CN.o"
+	@echo "... epaper/Fonts/font12CN.i"
+	@echo "... epaper/Fonts/font12CN.s"
+	@echo "... epaper/Fonts/font16.o"
+	@echo "... epaper/Fonts/font16.i"
+	@echo "... epaper/Fonts/font16.s"
+	@echo "... epaper/Fonts/font20.o"
+	@echo "... epaper/Fonts/font20.i"
+	@echo "... epaper/Fonts/font20.s"
+	@echo "... epaper/Fonts/font24.o"
+	@echo "... epaper/Fonts/font24.i"
+	@echo "... epaper/Fonts/font24.s"
+	@echo "... epaper/Fonts/font24CN.o"
+	@echo "... epaper/Fonts/font24CN.i"
+	@echo "... epaper/Fonts/font24CN.s"
+	@echo "... epaper/Fonts/font8.o"
+	@echo "... epaper/Fonts/font8.i"
+	@echo "... epaper/Fonts/font8.s"
+	@echo "... epaper/GUI/GUI_BMPfile.o"
+	@echo "... epaper/GUI/GUI_BMPfile.i"
+	@echo "... epaper/GUI/GUI_BMPfile.s"
+	@echo "... epaper/GUI/GUI_Paint.o"
+	@echo "... epaper/GUI/GUI_Paint.i"
+	@echo "... epaper/GUI/GUI_Paint.s"
+	@echo "... epaper/bcm2835/bcm2835.o"
+	@echo "... epaper/bcm2835/bcm2835.i"
+	@echo "... epaper/bcm2835/bcm2835.s"
+	@echo "... epaper/e-Paper/EPD_IT8951.o"
+	@echo "... epaper/e-Paper/EPD_IT8951.i"
+	@echo "... epaper/e-Paper/EPD_IT8951.s"
 	@echo "... gps/gps.o"
 	@echo "... gps/gps.i"
 	@echo "... gps/gps.s"

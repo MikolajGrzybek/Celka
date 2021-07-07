@@ -24,6 +24,7 @@ extern "C"{
     #include "epaper/GUI/GUI_Paint.h"
     #include "epaper/GUI/GUI_BMPfile.h"
     #include "epaper/Config/Debug.h"
+    #include "epaper/Config/DEV_Config.h"
 }
 
 
@@ -167,6 +168,8 @@ parameter:
     BitsPerPixel: Bits Per Pixel, 2^BitsPerPixel = grayscale
 ******************************************************************************/
 UBYTE Display_InitGui(UWORD Panel_Width, UWORD Panel_Height, UDOUBLE Init_Target_Memory_Addr, UBYTE BitsPerPixel){
+    const int epd_mode = 0;
+    
     UWORD Display_Area_Width;
     if(Four_Byte_Align == true){
         Display_Area_Width = Panel_Width - (Panel_Width % 32);

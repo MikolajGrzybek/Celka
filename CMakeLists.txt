@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(Gui LANGUAGES CXX)
+project(Gui)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
