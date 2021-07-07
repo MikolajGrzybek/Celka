@@ -1,7 +1,7 @@
 extern "C"{
     #include "lib/e-Paper/EPD_IT8951.h"
     #include "lib/GUI/GUI_BMPfile.h"
-    #include "lib/Config/DEV_Config.h" 
+    #include "lib/Config/DEV_Config.h"
 }
 
 #include "gui.hpp"
@@ -22,7 +22,7 @@ int epd_mode = 0;	//0: no rotate, no mirror
 					//1: no rotate, horizontal mirror, for 10.3inch
 					//2: no totate, horizontal mirror, for 5.17inch
 					//3: no rotate, no mirror, isColor, for 6inch color
-					
+
 void  Handler(int signo){
     Debug("\r\nHandler:exit\r\n");
     if(Refresh_Frame_Buf != NULL){
@@ -40,6 +40,12 @@ void  Handler(int signo){
         Debug("free bmp_dst_buf\r\n");
         bmp_dst_buf = NULL;
     }
+    //We recommended refresh the panel to white color before storing in the warehouse.
+    EPD_IT8951_Clear_Refresh(Dev_Info, Init_Target_Memory_Addr, INIT_Mode);
+    //EPD_IT8951_Standby();
+    EPD_IT8951_Sleep();
+    //In case RPI is transmitting image in no hold mode, which requires at most 10s
+    DEV_Delay_ms(5000);
     Debug("Going to sleep\r\n");
     EPD_IT8951_Sleep();
     DEV_Module_Exit();
@@ -83,23 +89,10 @@ int main(int argc, char *argv[])
 
 	EPD_IT8951_Clear_Refresh(Dev_Info, Init_Target_Memory_Addr, INIT_Mode);
 
-#if(USE_Normal_Demo)
+
     while(1){
-	Display_CharacterPattern_Example(Panel_Width, Panel_Height, Init_Target_Memory_Addr, BitsPerPixel_4);
-//	EPD_IT8951_Clear_Refresh(Dev_Info, Init_Target_Memory_Addr, GC16_Mode);
+  	Display_MainGui(Panel_Width, Panel_Height, Init_Target_Memory_Addr, BitsPerPixel_4);
     }
 
-#endif
-
-    //We recommended refresh the panel to white color before storing in the warehouse.
-    EPD_IT8951_Clear_Refresh(Dev_Info, Init_Target_Memory_Addr, INIT_Mode);
-
-    //EPD_IT8951_Standby();
-    EPD_IT8951_Sleep();
-
-    //In case RPI is transmitting image in no hold mode, which requires at most 10s
-    DEV_Delay_ms(5000);
-
-    DEV_Module_Exit();
     return 0;
 }

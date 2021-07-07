@@ -1,5 +1,5 @@
-#ifndef __EXAMPLE__
-#define __EXAMPLE__
+#ifndef GUI
+#define GUI
 
 extern "C"{
     #include "lib/e-Paper/EPD_IT8951.h"
@@ -7,10 +7,9 @@ extern "C"{
 }
 
 
-
 // 1 bit per pixel, which is 2 grayscale
 #define BitsPerPixel_1 1
-// 2 bit per pixel, which is 4 grayscale 
+// 2 bit per pixel, which is 4 grayscale
 #define BitsPerPixel_2 2
 // 4 bit per pixel, which is 16 grayscale
 #define BitsPerPixel_4 4
@@ -23,12 +22,9 @@ extern UBYTE *Refresh_Frame_Buf;
 
 extern bool Four_Byte_Align;
 
-UBYTE Display_ColorPalette_Example(UWORD Panel_Width, UWORD Panel_Height, UDOUBLE Init_Target_Memory_Addr);
-
-UBYTE Display_CharacterPattern_Example(UWORD Panel_Width, UWORD Panel_Height, UDOUBLE Init_Target_Memory_Addr, UBYTE BitsPerPixel);
+UBYTE Display_MainGui(UWORD Panel_Width, UWORD Panel_Height, UDOUBLE Init_Target_Memory_Addr, UBYTE BitsPerPixel);
 
 UBYTE Dynamic_Refresh_Example(IT8951_Dev_Info Dev_Info, UDOUBLE Init_Target_Memory_Addr);
 
-void Color_Test(IT8951_Dev_Info Dev_Info, UDOUBLE Init_Target_Memory_Addr);
 
 #endif
