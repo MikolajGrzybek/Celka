@@ -195,9 +195,21 @@ UBYTE Display_InitGui(UWORD Panel_Width, UWORD Panel_Height, UDOUBLE Init_Target
     Paint_SetBitsPerPixel(BitsPerPixel);
     Paint_Clear(WHITE);
 
-    // Actually print GUI
-    Paint_DrawRectangle(0, 0, 2*Display_Area_Sub_Width, Display_Area_Sub_Height, 0x00, DOT_PIXEL_3X3, DRAW_FILL_EMPTY);
-    Paint_DrawString_EN(Display_Area_Sub_Width*3/8, Display_Area_Sub_Height/4, "SPEED", &Font24, 0x30, 0xD0);
+    /* ---- Actually print GUI ---- */
+    
+    // SPEED
+    Paint_DrawRectangle(10, 10, 410, 205, 0x00, DOT_PIXEL_3X3, DRAW_FILL_EMPTY);
+    Paint_DrawString_EN(165, 25, "SPEED", &Font24, 0x00, 0xFF);
+
+    //DISCHARGE
+    Paint_DrawRectangle(525, 10, 925, 205, 0x00, DOT_PIXEL_3X3, DRAW_FILL_EMPTY);
+    Paint_DrawString_EN(650, 25, "DISCHARGE", &Font12, 0x00, 0xFF);
+ 
+    //CHARGE
+    Paint_DrawRectangle(1038, 10, 1438, 205, 0x00, DOT_PIXEL_3X3, DRAW_FILL_EMPTY); 
+    Paint_DrawString_EN(1182, 25, "CHARGE", &Font24, 0x00, 0xFF); 
+    
+
     // ***************************************************************************
 
     switch(BitsPerPixel){
@@ -248,7 +260,7 @@ void InitGui(){
     Debug("A2 Mode:%d\r\n", A2_Mode);
 
 
-	EPD_IT8951_Clear_Refresh(Dev_Info, Init_Target_Memory_Addr, INIT_Mode);
-    Display_InitGui(Panel_Width, Panel_Height, Init_Target_Memory_Addr, BitsPerPixel_4);
+    EPD_IT8951_Clear_Refresh(Dev_Info, Init_Target_Memory_Addr, INIT_Mode);
+    Display_InitGui(Panel_Width, Panel_Height, Init_Target_Memory_Addr, BitsPerPixel_8);
     return;
 }
