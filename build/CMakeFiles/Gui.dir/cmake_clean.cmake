@@ -2,8 +2,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Gui_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/Gui_autogen.dir/ParseCache.txt"
   "Gui_autogen"
-  "CMakeFiles/Gui.dir/Gui_autogen/EWIEGA46WW/qrc_resources.cpp.o"
-  "CMakeFiles/Gui.dir/Gui_autogen/EWIEGA46WW/qrc_resources.cpp.o.d"
   "CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/Gui.dir/can/can.cpp.o"
@@ -24,7 +22,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Gui.dir/serialport/serialport.cpp.o.d"
   "Gui"
   "Gui.pdb"
-  "Gui_autogen/EWIEGA46WW/qrc_resources.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

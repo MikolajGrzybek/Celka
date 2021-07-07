@@ -438,63 +438,32 @@ CMakeFiles/Gui.dir/gui.cpp.o: /home/mikolaj/Documents/Embeded-C/gui.cpp \
  /usr/include/asm/socket.h /usr/include/asm-generic/socket.h \
  /usr/include/asm/sockios.h /usr/include/asm-generic/sockios.h \
  /usr/include/bits/types/struct_osockaddr.h /usr/include/bits/in.h \
- /home/mikolaj/Documents/Embeded-C/build/Gui_autogen/include/./ui_gui.h \
- /usr/include/qt/QtCore/QVariant /usr/include/qt/QtCore/qvariant.h \
- /usr/include/qt/QtWidgets/QApplication \
- /usr/include/qt/QtWidgets/qapplication.h \
- /usr/include/qt/QtCore/qcoreapplication.h \
- /usr/include/qt/QtCore/qcoreevent.h /usr/include/qt/QtCore/qeventloop.h \
- /usr/include/qt/QtGui/qguiapplication.h \
- /usr/include/qt/QtGui/qinputmethod.h /usr/include/qt/QtWidgets/QComboBox \
- /usr/include/qt/QtWidgets/qcombobox.h \
- /usr/include/qt/QtWidgets/qwidget.h \
- /usr/include/qt/QtWidgets/qabstractitemdelegate.h \
- /usr/include/qt/QtWidgets/qstyleoption.h \
- /usr/include/qt/QtWidgets/qabstractspinbox.h \
- /usr/include/qt/QtGui/qvalidator.h /usr/include/qt/QtGui/qicon.h \
- /usr/include/qt/QtWidgets/qslider.h \
- /usr/include/qt/QtWidgets/qabstractslider.h \
- /usr/include/qt/QtWidgets/qstyle.h /usr/include/qt/QtWidgets/qtabbar.h \
- /usr/include/qt/QtWidgets/qtabwidget.h \
- /usr/include/qt/QtWidgets/qrubberband.h \
- /usr/include/qt/QtWidgets/qframe.h \
- /usr/include/qt/QtCore/qabstractitemmodel.h \
- /usr/include/qt/QtWidgets/QFormLayout \
- /usr/include/qt/QtWidgets/qformlayout.h \
- /usr/include/qt/QtWidgets/QLayout /usr/include/qt/QtWidgets/qlayout.h \
- /usr/include/qt/QtWidgets/qlayoutitem.h \
- /usr/include/qt/QtWidgets/qboxlayout.h \
- /usr/include/qt/QtWidgets/qlayout.h \
- /usr/include/qt/QtWidgets/qgridlayout.h /usr/include/qt/QtWidgets/QFrame \
- /usr/include/qt/QtWidgets/qframe.h /usr/include/qt/QtWidgets/QGroupBox \
- /usr/include/qt/QtWidgets/qgroupbox.h \
- /usr/include/qt/QtWidgets/QHBoxLayout \
- /usr/include/qt/QtWidgets/qboxlayout.h \
- /usr/include/qt/QtWidgets/QLCDNumber \
- /usr/include/qt/QtWidgets/qlcdnumber.h /usr/include/qt/QtWidgets/QLabel \
- /usr/include/qt/QtWidgets/qlabel.h \
- /usr/include/qt/QtWidgets/QProgressBar \
- /usr/include/qt/QtWidgets/qprogressbar.h \
- /usr/include/qt/QtWidgets/QPushButton \
- /usr/include/qt/QtWidgets/qpushbutton.h \
- /usr/include/qt/QtWidgets/qabstractbutton.h \
- /usr/include/qt/QtWidgets/QSpacerItem \
- /usr/include/qt/QtWidgets/qlayoutitem.h \
- /usr/include/qt/QtWidgets/QSpinBox /usr/include/qt/QtWidgets/qspinbox.h \
- /usr/include/qt/QtWidgets/QStackedWidget \
- /usr/include/qt/QtWidgets/qstackedwidget.h \
- /usr/include/qt/QtWidgets/QTextBrowser \
- /usr/include/qt/QtWidgets/qtextbrowser.h \
- /usr/include/qt/QtWidgets/qtextedit.h \
- /usr/include/qt/QtWidgets/qabstractscrollarea.h \
- /usr/include/qt/QtGui/qtextdocument.h \
- /usr/include/qt/QtGui/qtextoption.h /usr/include/qt/QtGui/qtextcursor.h \
- /usr/include/qt/QtGui/qtextformat.h /usr/include/qt/QtGui/qpen.h \
- /usr/include/qt/QtWidgets/QVBoxLayout /usr/include/qt/QtWidgets/QWidget \
+ /home/mikolaj/Documents/Embeded-C/epaper/e-Paper/EPD_IT8951.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdbool.h \
+ /home/mikolaj/Documents/Embeded-C/epaper/e-Paper/../Config/DEV_Config.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/bits/getopt_posix.h /usr/include/bits/getopt_core.h \
+ /usr/include/bits/unistd_ext.h \
+ /home/mikolaj/Documents/Embeded-C/epaper/e-Paper/../Config/Debug.h \
+ /home/mikolaj/Documents/Embeded-C/epaper/e-Paper/../Config/../bcm2835/bcm2835.h \
+ /home/mikolaj/Documents/Embeded-C/epaper/Config/DEV_Config.h \
  /usr/include/qt/QtCore/QFile /usr/include/qt/QtCore/qfile.h \
  /usr/include/qt/QtCore/qfiledevice.h /usr/include/qt/QtCore/QJsonArray \
  /usr/include/qt/QtCore/qjsonarray.h /usr/include/qt/QtCore/QJsonDocument \
- /usr/include/qt/QtCore/qjsondocument.h \
+ /usr/include/qt/QtCore/qjsondocument.h /usr/include/sys/stat.h \
+ /usr/include/bits/stat.h /usr/include/bits/struct_stat.h \
+ /usr/include/bits/statx.h /usr/include/linux/stat.h \
+ /usr/include/bits/statx-generic.h \
+ /usr/include/bits/types/struct_statx_timestamp.h \
+ /usr/include/bits/types/struct_statx.h /usr/include/fcntl.h \
+ /usr/include/bits/fcntl.h /usr/include/bits/fcntl-linux.h \
+ /usr/include/linux/falloc.h \
  /home/mikolaj/Documents/Embeded-C/can/sbt_can_msg.h \
  /usr/include/c++/11.1.0/cinttypes /usr/include/inttypes.h \
- /home/mikolaj/Documents/Embeded-C/can/utils.h
+ /home/mikolaj/Documents/Embeded-C/can/utils.h \
+ /home/mikolaj/Documents/Embeded-C/epaper/GUI/GUI_Paint.h \
+ /home/mikolaj/Documents/Embeded-C/epaper/GUI/../Config/DEV_Config.h \
+ /home/mikolaj/Documents/Embeded-C/epaper/GUI/../Fonts/fonts.h \
+ /home/mikolaj/Documents/Embeded-C/epaper/GUI/GUI_BMPfile.h \
+ /home/mikolaj/Documents/Embeded-C/epaper/Config/Debug.h

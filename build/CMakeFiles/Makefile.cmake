@@ -10,7 +10,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "../CMakeLists.txt"
   "CMakeFiles/3.20.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.20.3/CMakeSystem.cmake"
-  "../resources.qrc"
   "/usr/lib64/cmake/Qt5/Qt5Config.cmake"
   "/usr/lib64/cmake/Qt5/Qt5ConfigVersion.cmake"
   "/usr/lib64/cmake/Qt5/Qt5ModuleLocation.cmake"
@@ -144,7 +143,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.20.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.20.3/CMakeCXXCompiler.cmake"
   "CMakeFiles/Gui_autogen.dir/AutogenInfo.json"
-  "CMakeFiles/Gui_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

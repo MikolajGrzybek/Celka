@@ -18,11 +18,9 @@ set(PROJECT_SOURCES
 
     gui.cpp
     gui.hpp
-    gui.ui
 
     mav.cpp
 
-    resources.qrc
 
     can/can.cpp
     can/can.hpp

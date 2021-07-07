@@ -438,6 +438,16 @@ CMakeFiles/Gui.dir/main.cpp.o: /home/mikolaj/Documents/Embeded-C/main.cpp \
  /usr/include/asm/socket.h /usr/include/asm-generic/socket.h \
  /usr/include/asm/sockios.h /usr/include/asm-generic/sockios.h \
  /usr/include/bits/types/struct_osockaddr.h /usr/include/bits/in.h \
+ /home/mikolaj/Documents/Embeded-C/epaper/e-Paper/EPD_IT8951.h \
+ /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdbool.h \
+ /home/mikolaj/Documents/Embeded-C/epaper/e-Paper/../Config/DEV_Config.h \
+ /usr/include/unistd.h /usr/include/bits/posix_opt.h \
+ /usr/include/bits/environments.h /usr/include/bits/confname.h \
+ /usr/include/bits/getopt_posix.h /usr/include/bits/getopt_core.h \
+ /usr/include/bits/unistd_ext.h \
+ /home/mikolaj/Documents/Embeded-C/epaper/e-Paper/../Config/Debug.h \
+ /home/mikolaj/Documents/Embeded-C/epaper/e-Paper/../Config/../bcm2835/bcm2835.h \
+ /home/mikolaj/Documents/Embeded-C/epaper/Config/DEV_Config.h \
  /usr/include/qt/QtWidgets/QApplication \
  /usr/include/qt/QtWidgets/qapplication.h \
  /usr/include/qt/QtCore/qcoreapplication.h \
