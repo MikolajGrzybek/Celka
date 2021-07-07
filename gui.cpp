@@ -43,11 +43,10 @@ extern UWORD VCOM;
 extern UBYTE isColor;
 
 
-Gui::Gui(QWidget *parent)
-    : QWidget(parent),
-     gps(new Gps(GPS_PORT, parent)),
-     m_can(new CAN(CAN_ITF ,parent)),
-     m_mav("10.0.0.1", parent)
+Gui::Gui()
+    :gps(new Gps(GPS_PORT)),
+     m_can(new CAN(CAN_ITF)),
+     m_mav("10.0.0.1")
 {
     m_start_time = std::chrono::high_resolution_clock::now();
 

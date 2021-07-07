@@ -4,7 +4,6 @@
 constexpr char GPS_PORT[] = "/dev/ttyACM0";
 constexpr char CAN_ITF[]  = "can0";
 
-#include <QWidget>
 #include <QString>
 #include <QJsonObject>
 
@@ -40,10 +39,9 @@ extern UBYTE *Refresh_Frame_Buf;
 
 extern bool Four_Byte_Align;
 
-class Gui : public QWidget
+class Gui : public QObject
 {
     Q_OBJECT
-
 private:
     Gps     *gps;
     CAN     *m_can;
@@ -55,7 +53,7 @@ private:
     QJsonObject         m_parameters;
 
 public:
-    Gui(QWidget *parent = nullptr);
+    Gui();
 
 private slots:
     void on_gps_data_received(sbt_RMC_msg msg);

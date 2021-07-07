@@ -1,8 +1,7 @@
 CMakeFiles/Gui.dir/main.cpp.o: /home/mikolaj/Documents/Embeded-C/main.cpp \
  /usr/include/stdc-predef.h /home/mikolaj/Documents/Embeded-C/gui.hpp \
- /usr/include/qt/QtWidgets/QWidget /usr/include/qt/QtWidgets/qwidget.h \
- /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
- /usr/include/qt/QtGui/qtguiglobal.h /usr/include/qt/QtCore/qglobal.h \
+ /usr/include/qt/QtCore/QString /usr/include/qt/QtCore/qstring.h \
+ /usr/include/qt/QtCore/qchar.h /usr/include/qt/QtCore/qglobal.h \
  /usr/include/c++/11.1.0/type_traits \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -75,14 +74,8 @@ CMakeFiles/Gui.dir/main.cpp.o: /home/mikolaj/Documents/Embeded-C/main.cpp \
  /usr/include/c++/11.1.0/bits/atomic_lockfree_defines.h \
  /usr/include/qt/QtCore/qglobalstatic.h /usr/include/qt/QtCore/qnumeric.h \
  /usr/include/qt/QtCore/qversiontagging.h \
- /usr/include/qt/QtGui/qtgui-config.h \
- /usr/include/qt/QtWidgets/qtwidgets-config.h \
- /usr/include/qt/QtGui/qwindowdefs.h /usr/include/qt/QtCore/qobjectdefs.h \
- /usr/include/qt/QtCore/qnamespace.h \
- /usr/include/qt/QtCore/qobjectdefs_impl.h \
- /usr/include/qt/QtCore/qobject.h /usr/include/qt/QtCore/qstring.h \
- /usr/include/qt/QtCore/qchar.h /usr/include/qt/QtCore/qbytearray.h \
- /usr/include/qt/QtCore/qrefcount.h /usr/include/qt/QtCore/qarraydata.h \
+ /usr/include/qt/QtCore/qbytearray.h /usr/include/qt/QtCore/qrefcount.h \
+ /usr/include/qt/QtCore/qnamespace.h /usr/include/qt/QtCore/qarraydata.h \
  /usr/include/string.h /usr/include/strings.h \
  /usr/include/c++/11.1.0/stdlib.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdarg.h \
@@ -152,8 +145,11 @@ CMakeFiles/Gui.dir/main.cpp.o: /home/mikolaj/Documents/Embeded-C/main.cpp \
  /usr/include/c++/11.1.0/bits/streambuf.tcc \
  /usr/include/qt/QtCore/qstringliteral.h \
  /usr/include/qt/QtCore/qstringalgorithms.h \
- /usr/include/qt/QtCore/qstringview.h /usr/include/qt/QtCore/qlist.h \
- /usr/include/qt/QtCore/qalgorithms.h /usr/include/qt/QtCore/qiterator.h \
+ /usr/include/qt/QtCore/qstringview.h /usr/include/qt/QtCore/QJsonObject \
+ /usr/include/qt/QtCore/qjsonobject.h /usr/include/qt/QtCore/qjsonvalue.h \
+ /usr/include/qt/QtCore/qstring.h /usr/include/qt/QtCore/qshareddata.h \
+ /usr/include/qt/QtCore/qhash.h /usr/include/qt/QtCore/qiterator.h \
+ /usr/include/qt/QtCore/qlist.h /usr/include/qt/QtCore/qalgorithms.h \
  /usr/include/qt/QtCore/qhashfunctions.h /usr/include/qt/QtCore/qpair.h \
  /usr/include/c++/11.1.0/numeric \
  /usr/include/c++/11.1.0/bits/stl_numeric.h \
@@ -182,30 +178,26 @@ CMakeFiles/Gui.dir/main.cpp.o: /home/mikolaj/Documents/Embeded-C/main.cpp \
  /usr/include/bits/uio_lim.h /usr/include/qt/QtCore/qbytearraylist.h \
  /usr/include/qt/QtCore/qstringlist.h /usr/include/qt/QtCore/qregexp.h \
  /usr/include/qt/QtCore/qstringmatcher.h \
- /usr/include/qt/QtCore/qscopedpointer.h \
+ /usr/include/qt/QtCore/qcborvalue.h /usr/include/qt/QtCore/qdatetime.h \
+ /usr/include/c++/11.1.0/limits /usr/include/qt/QtCore/qcborcommon.h \
+ /usr/include/qt/QtCore/qobjectdefs.h \
+ /usr/include/qt/QtCore/qobjectdefs_impl.h \
  /usr/include/qt/QtCore/qmetatype.h \
  /usr/include/qt/QtCore/qvarlengtharray.h \
  /usr/include/qt/QtCore/qcontainerfwd.h /usr/include/c++/11.1.0/map \
  /usr/include/c++/11.1.0/bits/stl_tree.h \
  /usr/include/c++/11.1.0/bits/stl_map.h \
  /usr/include/c++/11.1.0/bits/stl_multimap.h \
- /usr/include/c++/11.1.0/bits/erase_if.h \
+ /usr/include/c++/11.1.0/bits/erase_if.h /usr/include/qt/QtCore/qdebug.h \
+ /usr/include/qt/QtCore/qmap.h /usr/include/qt/QtCore/qtextstream.h \
+ /usr/include/qt/QtCore/qiodevice.h /usr/include/qt/QtCore/qobject.h \
+ /usr/include/qt/QtCore/qscopedpointer.h \
  /usr/include/qt/QtCore/qobject_impl.h /usr/include/c++/11.1.0/chrono \
- /usr/include/c++/11.1.0/ratio /usr/include/c++/11.1.0/limits \
- /usr/include/c++/11.1.0/ctime \
+ /usr/include/c++/11.1.0/ratio /usr/include/c++/11.1.0/ctime \
  /usr/include/c++/11.1.0/bits/parse_numbers.h \
- /usr/include/qt/QtCore/qmargins.h /usr/include/qt/QtGui/qpaintdevice.h \
- /usr/include/qt/QtCore/qrect.h /usr/include/qt/QtCore/qsize.h \
- /usr/include/qt/QtCore/qpoint.h /usr/include/qt/QtGui/qpalette.h \
- /usr/include/qt/QtGui/qcolor.h /usr/include/qt/QtGui/qrgb.h \
- /usr/include/qt/QtGui/qrgba64.h /usr/include/qt/QtGui/qbrush.h \
- /usr/include/qt/QtGui/qmatrix.h /usr/include/qt/QtGui/qpolygon.h \
- /usr/include/qt/QtGui/qregion.h /usr/include/qt/QtCore/qdatastream.h \
- /usr/include/qt/QtCore/qiodevice.h /usr/include/qt/QtCore/qline.h \
- /usr/include/qt/QtGui/qtransform.h /usr/include/qt/QtGui/qimage.h \
- /usr/include/qt/QtGui/qpixelformat.h /usr/include/qt/QtGui/qpixmap.h \
+ /usr/include/qt/QtCore/qlocale.h /usr/include/qt/QtCore/qvariant.h \
+ /usr/include/qt/QtCore/qset.h /usr/include/qt/QtCore/qcontiguouscache.h \
  /usr/include/qt/QtCore/qsharedpointer.h \
- /usr/include/qt/QtCore/qshareddata.h /usr/include/qt/QtCore/qhash.h \
  /usr/include/qt/QtCore/qsharedpointer_impl.h \
  /usr/include/c++/11.1.0/memory \
  /usr/include/c++/11.1.0/bits/stl_raw_storage_iter.h \
@@ -216,17 +208,6 @@ CMakeFiles/Gui.dir/main.cpp.o: /home/mikolaj/Documents/Embeded-C/main.cpp \
  /usr/include/c++/11.1.0/ext/concurrence.h \
  /usr/include/c++/11.1.0/bits/shared_ptr_atomic.h \
  /usr/include/c++/11.1.0/backward/auto_ptr.h \
- /usr/include/qt/QtGui/qfont.h /usr/include/qt/QtGui/qfontmetrics.h \
- /usr/include/qt/QtGui/qfontinfo.h \
- /usr/include/qt/QtWidgets/qsizepolicy.h /usr/include/qt/QtGui/qcursor.h \
- /usr/include/qt/QtGui/qkeysequence.h /usr/include/qt/QtCore/QString \
- /usr/include/qt/QtCore/qstring.h /usr/include/qt/QtCore/QJsonObject \
- /usr/include/qt/QtCore/qjsonobject.h /usr/include/qt/QtCore/qjsonvalue.h \
- /usr/include/qt/QtCore/qcborvalue.h /usr/include/qt/QtCore/qdatetime.h \
- /usr/include/qt/QtCore/qcborcommon.h /usr/include/qt/QtCore/qdebug.h \
- /usr/include/qt/QtCore/qmap.h /usr/include/qt/QtCore/qtextstream.h \
- /usr/include/qt/QtCore/qlocale.h /usr/include/qt/QtCore/qvariant.h \
- /usr/include/qt/QtCore/qset.h /usr/include/qt/QtCore/qcontiguouscache.h \
  /usr/include/qt/QtCore/qregularexpression.h \
  /usr/include/qt/QtCore/qurl.h /usr/include/qt/QtCore/quuid.h \
  /home/mikolaj/Documents/Embeded-C/gps/gps.hpp \
@@ -448,9 +429,6 @@ CMakeFiles/Gui.dir/main.cpp.o: /home/mikolaj/Documents/Embeded-C/main.cpp \
  /home/mikolaj/Documents/Embeded-C/epaper/e-Paper/../Config/Debug.h \
  /home/mikolaj/Documents/Embeded-C/epaper/e-Paper/../Config/../bcm2835/bcm2835.h \
  /home/mikolaj/Documents/Embeded-C/epaper/Config/DEV_Config.h \
- /usr/include/qt/QtWidgets/QApplication \
- /usr/include/qt/QtWidgets/qapplication.h \
+ /usr/include/qt/QtCore/QCoreApplication \
  /usr/include/qt/QtCore/qcoreapplication.h \
- /usr/include/qt/QtCore/qcoreevent.h /usr/include/qt/QtCore/qeventloop.h \
- /usr/include/qt/QtGui/qguiapplication.h \
- /usr/include/qt/QtGui/qinputmethod.h
+ /usr/include/qt/QtCore/qcoreevent.h /usr/include/qt/QtCore/qeventloop.h

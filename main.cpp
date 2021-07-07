@@ -1,12 +1,12 @@
 #include "gui.hpp"
 
-#include <QApplication>
+#include <QCoreApplication>
 #include <QDebug>
 
 
 int main(int argc, char *argv[])
 {
-    QApplication app(argc, argv);
+     QCoreApplication app(argc, argv);
 
     Gui w;
 
