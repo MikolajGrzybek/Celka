@@ -46,7 +46,6 @@ void  Handler(int signo){
     exit(0);
 }
 
-
 int main(int argc, char *argv[])
 {
     //Exception handling:ctrl + c
@@ -85,20 +84,11 @@ int main(int argc, char *argv[])
 	EPD_IT8951_Clear_Refresh(Dev_Info, Init_Target_Memory_Addr, INIT_Mode);
 
 #if(USE_Normal_Demo)
-    //Show 16 grayscale
-    Display_ColorPalette_Example(Panel_Width, Panel_Height, Init_Target_Memory_Addr);
-	EPD_IT8951_Clear_Refresh(Dev_Info, Init_Target_Memory_Addr, GC16_Mode);
+    while(1){
+	Display_CharacterPattern_Example(Panel_Width, Panel_Height, Init_Target_Memory_Addr, BitsPerPixel_4);
+//	EPD_IT8951_Clear_Refresh(Dev_Info, Init_Target_Memory_Addr, GC16_Mode);
+    }
 
-    //Show some character and pattern
-    Display_CharacterPattern_Example(Panel_Width, Panel_Height, Init_Target_Memory_Addr, BitsPerPixel_4);
-    EPD_IT8951_Clear_Refresh(Dev_Info, Init_Target_Memory_Addr, GC16_Mode);
-    
-    //Show A2 mode refresh effect
-    EPD_IT8951_Clear_Refresh(Dev_Info, Init_Target_Memory_Addr, A2_Mode);
-    Dynamic_Refresh_Example(Dev_Info,Init_Target_Memory_Addr);
-    EPD_IT8951_Clear_Refresh(Dev_Info, Init_Target_Memory_Addr, A2_Mode);
-    EPD_IT8951_Clear_Refresh(Dev_Info, Init_Target_Memory_Addr, GC16_Mode);
-	
 #endif
 
     //We recommended refresh the panel to white color before storing in the warehouse.
