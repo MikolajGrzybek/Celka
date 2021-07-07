@@ -16,6 +16,7 @@
 #include <cstdlib>
 #include "can/sbt_can_msg.h"
 #include "can/utils.h"
+#include "epaper/Fonts/fonts.h"
 #include "mav.hpp"
 #include "mavlink/standard/mavlink.h"
 
@@ -195,9 +196,8 @@ UBYTE Display_InitGui(UWORD Panel_Width, UWORD Panel_Height, UDOUBLE Init_Target
     Paint_Clear(WHITE);
 
     // Actually print GUI
-    Paint_DrawRectangle(0, 0, Display_Area_Sub_Width, Display_Area_Sub_Height, 0x00, DOT_PIXEL_3X3, DRAW_FILL_EMPTY);
-    Paint_DrawNum(Display_Area_Sub_Width*3/10, Display_Area_Sub_Height*1/4, 2137, &Font16, 0x20, 0xE0);
-    Paint_DrawString_EN(Display_Area_Sub_Width*3/10, Display_Area_Sub_Height*3/4, "hello solarku", &Font16, 0x30, 0xD0);
+    Paint_DrawRectangle(0, 0, 2*Display_Area_Sub_Width, Display_Area_Sub_Height, 0x00, DOT_PIXEL_3X3, DRAW_FILL_EMPTY);
+    Paint_DrawString_EN(Display_Area_Sub_Width*3/8, Display_Area_Sub_Height/4, "SPEED", &Font24, 0x30, 0xD0);
     // ***************************************************************************
 
     switch(BitsPerPixel){
