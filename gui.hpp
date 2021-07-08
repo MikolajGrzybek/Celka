@@ -39,6 +39,25 @@ extern UBYTE *Refresh_Frame_Buf;
 
 extern bool Four_Byte_Align;
 
+
+typedef struct{
+    UWORD Dynamic_Area_Width;
+    UWORD Dynamic_Area_Height;
+
+    UDOUBLE Imagesize;
+
+    UWORD Start_X;
+    UWORD Start_Y;
+
+    UWORD Dynamic_Area_Count;
+    UWORD Repeat_Area_Times;
+
+    clock_t Dynamic_Area_Start;
+    clock_t Dynamic_Area_Finish;
+    double Dynamic_Area_Duration; 
+} Dynamic_Ref_Area;
+
+
 class Gui : public QObject
 {
     Q_OBJECT
@@ -70,9 +89,12 @@ private slots:
 
 };
 
-/* INIT GUI */
+/* GUI */
 UBYTE Display_InitGui(UWORD Panel_Width, UWORD Panel_Height, UDOUBLE Init_Target_Memory_Addr, UBYTE BitsPerPixel);
 
 void InitGui();
+
+UBYTE Dynamic_Refresh(UWORD width, UWORD height, UWORD start_x, UWORD start_y);
+
 
 #endif // GUI_HPP

@@ -15,6 +15,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/mikolaj/Documents/Embeded-C/epaper/Fonts/font20.c" "CMakeFiles/Gui.dir/epaper/Fonts/font20.c.o" "gcc" "CMakeFiles/Gui.dir/epaper/Fonts/font20.c.o.d"
   "/home/mikolaj/Documents/Embeded-C/epaper/Fonts/font24.c" "CMakeFiles/Gui.dir/epaper/Fonts/font24.c.o" "gcc" "CMakeFiles/Gui.dir/epaper/Fonts/font24.c.o.d"
   "/home/mikolaj/Documents/Embeded-C/epaper/Fonts/font24CN.c" "CMakeFiles/Gui.dir/epaper/Fonts/font24CN.c.o" "gcc" "CMakeFiles/Gui.dir/epaper/Fonts/font24CN.c.o.d"
+  "/home/mikolaj/Documents/Embeded-C/epaper/Fonts/font32.c" "CMakeFiles/Gui.dir/epaper/Fonts/font32.c.o" "gcc" "CMakeFiles/Gui.dir/epaper/Fonts/font32.c.o.d"
   "/home/mikolaj/Documents/Embeded-C/epaper/Fonts/font8.c" "CMakeFiles/Gui.dir/epaper/Fonts/font8.c.o" "gcc" "CMakeFiles/Gui.dir/epaper/Fonts/font8.c.o.d"
   "/home/mikolaj/Documents/Embeded-C/epaper/GUI/GUI_BMPfile.c" "CMakeFiles/Gui.dir/epaper/GUI/GUI_BMPfile.c.o" "gcc" "CMakeFiles/Gui.dir/epaper/GUI/GUI_BMPfile.c.o.d"
   "/home/mikolaj/Documents/Embeded-C/epaper/GUI/GUI_Paint.c" "CMakeFiles/Gui.dir/epaper/GUI/GUI_Paint.c.o" "gcc" "CMakeFiles/Gui.dir/epaper/GUI/GUI_Paint.c.o.d"

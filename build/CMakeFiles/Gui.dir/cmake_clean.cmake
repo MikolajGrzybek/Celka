@@ -22,6 +22,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Gui.dir/epaper/Fonts/font24.c.o.d"
   "CMakeFiles/Gui.dir/epaper/Fonts/font24CN.c.o"
   "CMakeFiles/Gui.dir/epaper/Fonts/font24CN.c.o.d"
+  "CMakeFiles/Gui.dir/epaper/Fonts/font32.c.o"
+  "CMakeFiles/Gui.dir/epaper/Fonts/font32.c.o.d"
   "CMakeFiles/Gui.dir/epaper/Fonts/font8.c.o"
   "CMakeFiles/Gui.dir/epaper/Fonts/font8.c.o.d"
   "CMakeFiles/Gui.dir/epaper/GUI/GUI_BMPfile.c.o"

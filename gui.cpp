@@ -32,8 +32,8 @@ extern "C"{
 static const double PI = 3.14159265359;
 static const double DEG2RAD = (180.0 / PI);
 
+/******* EPAPER STUFF *******/
 UBYTE *Refresh_Frame_Buf = NULL;
-
 UBYTE *Panel_Frame_Buf = NULL;
 UBYTE *Panel_Area_Frame_Buf = NULL;
 
@@ -42,7 +42,7 @@ bool Four_Byte_Align = false;
 extern int epd_mode;
 extern UWORD VCOM;
 extern UBYTE isColor;
-
+/************************** */
 
 Gui::Gui()
     :gps(new Gps(GPS_PORT)),
@@ -58,6 +58,8 @@ Gui::Gui()
     connect(gps, &Gps::fixChanged, this, &Gui::on_gps_fix_changed);
 
     InitGui();
+
+    Dynamic_Refresh(300, 200, 500, 500);
 }
 
 
@@ -70,7 +72,6 @@ void Gui::on_gps_data_received(sbt_RMC_msg msg)
     constexpr float SPEED_OFFSET = 0.1f;  // floating reduction
     if (speed < SPEED_OFFSET)
         speed = 0.00f;
-    Paint_DrawNum(165, 100, speed_int, &Font24, 0x00, 0xFF); 
     m_can->send_frame(can_msg_id_t::GPS_ID, 4, data);
     mavlink_msg_gps_raw_int_send(MAVLINK_COMM_0, m_mav.microsSinceEpoch(), 3,
 								 msg.Position_t.lat * 1e7,
@@ -82,6 +83,8 @@ void Gui::on_gps_data_received(sbt_RMC_msg msg)
 								 msg.cog*10.0, //cog
 								 UINT8_MAX);
     m_mav.sensor_alive(MAV_SYS_STATUS_SENSOR_GPS);
+
+    Paint_DrawNum(165, 100, speed_int, &Font24, 0x00, 0xFF); 
 }
 
 void Gui::on_gps_fix_changed(bool is_fixed)
@@ -262,11 +265,6 @@ void Gui::on_can_frame_received(can_frame cf)
 
 }
 
-/******************************************************************************
-function: Change direction of display, Called after Paint_NewImage()
-parameter:
-    mode: display mode
-******************************************************************************/
 static void Epd_Mode(int mode)
 {
     if(mode == 3) {
@@ -285,14 +283,7 @@ static void Epd_Mode(int mode)
     }
 }
 
-/******************************************************************************
-function: Display_InitGui
-parameter:
-    Panel_Width: Width of the panel
-    Panel_Height: Height of the panel
-    Init_Target_Memory_Addr: Memory address of IT8951 target memory address
-    BitsPerPixel: Bits Per Pixel, 2^BitsPerPixel = grayscale
-******************************************************************************/
+
 UBYTE Display_InitGui(UWORD Panel_Width, UWORD Panel_Height, UDOUBLE Init_Target_Memory_Addr, UBYTE BitsPerPixel){
     const int epd_mode = 0;
     
@@ -393,4 +384,66 @@ void InitGui(){
     EPD_IT8951_Clear_Refresh(Dev_Info, Init_Target_Memory_Addr, INIT_Mode);
     Display_InitGui(Panel_Width, Panel_Height, Init_Target_Memory_Addr, BitsPerPixel_8);
     return;
+}
+
+
+UBYTE Dynamic_Refresh(UWORD width, UWORD height, UWORD start_x, UWORD start_y){
+    IT8951_Dev_Info Dev_Info;
+    
+    UWORD Panel_Width = Dev_Info.Panel_W;
+    UWORD Panel_Height = Dev_Info.Panel_H;
+    UDOUBLE Init_Target_Memory_Addr = Dev_Info.Memory_Addr_L | (Dev_Info.Memory_Addr_H << 16);
+
+    Dynamic_Ref_Area Area;
+
+    Area.Dynamic_Area_Width = width;
+    Area.Dynamic_Area_Height = height;
+    Area.Start_X = start_x;
+    Area.Start_Y = start_y;
+    
+    Area.Imagesize = ((Panel_Width * 1 % 8 == 0)? (Panel_Width * 1 / 8 ): (Panel_Width * 1 / 8 + 1)) * Panel_Height;
+
+    Area.Dynamic_Area_Count = 0;
+    Area.Dynamic_Area_Start = clock();
+
+    while(1){
+        for(Area.Dynamic_Area_Width = 96, Area.Dynamic_Area_Height = 64; (Area.Dynamic_Area_Width < Panel_Width - 32) && (Area.Dynamic_Area_Height < Panel_Height - 24); Area.Dynamic_Area_Width += 32, Area.Dynamic_Area_Height += 24)
+        {
+            Area.Imagesize = ((Area.Dynamic_Area_Width % 8 == 0)? (Area.Dynamic_Area_Width / 8 ): (Area.Dynamic_Area_Width / 8 + 1)) * Area.Dynamic_Area_Height;
+            Paint_NewImage(Refresh_Frame_Buf, Area.Dynamic_Area_Width, Area.Dynamic_Area_Height, 0, BLACK);
+            Paint_SelectImage(Refresh_Frame_Buf);
+            Epd_Mode(0);
+            Paint_SetBitsPerPixel(1);
+
+            for(int y=Area.Start_Y; y< Panel_Height - Area.Dynamic_Area_Height; y += Area.Dynamic_Area_Height){
+                for(int x=Area.Start_X; x< Panel_Width - Area.Dynamic_Area_Width; x += Area.Dynamic_Area_Width){
+                    Paint_Clear(WHITE);
+
+                    /* DRAW HERE */
+                    Paint_DrawNum(Area.Dynamic_Area_Width/4, Area.Dynamic_Area_Height/4, ++Area.Dynamic_Area_Count, &Font24, 0x00, 0xF0);
+                        
+                    /* STOP DRAW */
+                    EPD_IT8951_1bp_Refresh(Refresh_Frame_Buf, x, y, Area.Dynamic_Area_Width,  Area.Dynamic_Area_Height, A2_Mode, Init_Target_Memory_Addr, true);
+                }
+            }
+            Area.Start_X += 32;
+            Area.Start_Y += 24;
+        }
+
+        Area.Dynamic_Area_Finish = clock();
+        Area.Dynamic_Area_Duration = (double)(Area.Dynamic_Area_Finish - Area.Dynamic_Area_Start) / CLOCKS_PER_SEC;
+
+        Area.Repeat_Area_Times ++;
+        if(Area.Repeat_Area_Times > 0){
+            break;
+        }
+    }
+
+    if(Refresh_Frame_Buf != NULL){
+        free(Refresh_Frame_Buf);
+        Refresh_Frame_Buf = NULL;
+    }
+
+    return 0;
+
 }

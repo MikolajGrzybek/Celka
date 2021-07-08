@@ -382,6 +382,30 @@ epaper/Fonts/font24CN.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font24CN.c.s
 .PHONY : epaper/Fonts/font24CN.c.s
 
+epaper/Fonts/font32.o: epaper/Fonts/font32.c.o
+.PHONY : epaper/Fonts/font32.o
+
+# target to build an object file
+epaper/Fonts/font32.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font32.c.o
+.PHONY : epaper/Fonts/font32.c.o
+
+epaper/Fonts/font32.i: epaper/Fonts/font32.c.i
+.PHONY : epaper/Fonts/font32.i
+
+# target to preprocess a source file
+epaper/Fonts/font32.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font32.c.i
+.PHONY : epaper/Fonts/font32.c.i
+
+epaper/Fonts/font32.s: epaper/Fonts/font32.c.s
+.PHONY : epaper/Fonts/font32.s
+
+# target to generate assembly for a file
+epaper/Fonts/font32.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Gui.dir/build.make CMakeFiles/Gui.dir/epaper/Fonts/font32.c.s
+.PHONY : epaper/Fonts/font32.c.s
+
 epaper/Fonts/font8.o: epaper/Fonts/font8.c.o
 .PHONY : epaper/Fonts/font8.o
 
@@ -686,6 +710,9 @@ help:
 	@echo "... epaper/Fonts/font24CN.o"
 	@echo "... epaper/Fonts/font24CN.i"
 	@echo "... epaper/Fonts/font24CN.s"
+	@echo "... epaper/Fonts/font32.o"
+	@echo "... epaper/Fonts/font32.i"
+	@echo "... epaper/Fonts/font32.s"
 	@echo "... epaper/Fonts/font8.o"
 	@echo "... epaper/Fonts/font8.i"
 	@echo "... epaper/Fonts/font8.s"

@@ -344,7 +344,20 @@ CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.o: Gui_autogen/mocs_compilat
   /usr/include/bits/termios-misc.h \
   /usr/include/sys/ttydefaults.h \
   ../gps/msgs/NMEA.hpp \
-  Gui_autogen/EWIEGA46WW/moc_mav.cpp \
+  Gui_autogen/EWIEGA46WW/moc_gui.cpp \
+  ../gui.hpp \
+  /usr/include/qt/QtCore/QJsonObject \
+  /usr/include/qt/QtCore/qjsonobject.h \
+  /usr/include/qt/QtCore/qjsonvalue.h \
+  /usr/include/qt/QtCore/qcborvalue.h \
+  /usr/include/qt/QtCore/qdatetime.h \
+  /usr/include/qt/QtCore/qcborcommon.h \
+  /usr/include/qt/QtCore/qdebug.h \
+  /usr/include/qt/QtCore/qregularexpression.h \
+  /usr/include/qt/QtCore/qurl.h \
+  /usr/include/qt/QtCore/quuid.h \
+  ../gps/gps.hpp \
+  ../can/can.hpp \
   ../mav.hpp \
   /usr/include/qt/QtCore/QTimer \
   /usr/include/qt/QtCore/qtimer.h \
@@ -529,6 +542,20 @@ CMakeFiles/Gui.dir/Gui_autogen/mocs_compilation.cpp.o: Gui_autogen/mocs_compilat
   /usr/include/asm-generic/sockios.h \
   /usr/include/bits/types/struct_osockaddr.h \
   /usr/include/bits/in.h \
+  ../epaper/e-Paper/EPD_IT8951.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdbool.h \
+  ../epaper/Config/DEV_Config.h \
+  /usr/include/unistd.h \
+  /usr/include/bits/posix_opt.h \
+  /usr/include/bits/environments.h \
+  /usr/include/bits/confname.h \
+  /usr/include/bits/getopt_posix.h \
+  /usr/include/bits/getopt_core.h \
+  /usr/include/bits/unistd_ext.h \
+  ../epaper/Config/Debug.h \
+  ../epaper/bcm2835/bcm2835.h \
+  ../epaper/Config/DEV_Config.h \
+  Gui_autogen/EWIEGA46WW/moc_mav.cpp \
   Gui_autogen/YN6D6BICVT/moc_serialport.cpp \
   ../serialport/serialport.hpp
 
@@ -1146,6 +1173,26 @@ CMakeFiles/Gui.dir/epaper/Fonts/font24.c.o: ../epaper/Fonts/font24.c \
   /usr/include/bits/stdint-uintn.h
 
 CMakeFiles/Gui.dir/epaper/Fonts/font24CN.c.o: ../epaper/Fonts/font24CN.c \
+  /usr/include/stdc-predef.h \
+  ../epaper/Fonts/fonts.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
+  /usr/include/stdint.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/features.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdint-uintn.h
+
+CMakeFiles/Gui.dir/epaper/Fonts/font32.c.o: ../epaper/Fonts/font32.c \
   /usr/include/stdc-predef.h \
   ../epaper/Fonts/fonts.h \
   /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h \
@@ -2584,6 +2631,7 @@ CMakeFiles/Gui.dir/gui.cpp.o: ../gui.cpp \
   /usr/include/c++/11.1.0/cinttypes \
   /usr/include/inttypes.h \
   ../can/utils.h \
+  ../epaper/Fonts/fonts.h \
   ../epaper/GUI/GUI_Paint.h \
   ../epaper/Config/DEV_Config.h \
   ../epaper/Fonts/fonts.h \
@@ -3959,27 +4007,11 @@ CMakeFiles/Gui.dir/serialport/serialport.cpp.o: ../serialport/serialport.cpp \
 
 /usr/include/qt/QtCore/qfile.h:
 
-/usr/include/qt/QtCore/quuid.h:
-
-/usr/include/qt/QtCore/qurl.h:
-
-/usr/include/qt/QtCore/qcborcommon.h:
-
-/usr/include/qt/QtCore/qcborvalue.h:
-
-/usr/include/qt/QtCore/qjsonvalue.h:
-
-/usr/include/qt/QtCore/qjsonobject.h:
-
-/usr/include/qt/QtCore/QJsonObject:
-
 ../gps/gps_init.h:
 
 ../gps/parser.hpp:
 
 ../gps/gps.cpp:
-
-../epaper/e-Paper/EPD_IT8951.h:
 
 ../epaper/e-Paper/EPD_IT8951.c:
 
@@ -3995,6 +4027,8 @@ CMakeFiles/Gui.dir/serialport/serialport.cpp.o: ../serialport/serialport.cpp \
 
 ../epaper/GUI/GUI_BMPfile.h:
 
+../epaper/Fonts/font32.c:
+
 ../epaper/Fonts/font24.c:
 
 ../epaper/Fonts/font12CN.c:
@@ -4005,15 +4039,37 @@ CMakeFiles/Gui.dir/serialport/serialport.cpp.o: ../serialport/serialport.cpp \
 
 /usr/include/fcntl.h:
 
+../can/utils.h:
+
+/usr/include/asm-generic/ioctl.h:
+
+/usr/include/asm/ioctl.h:
+
+/usr/include/linux/ioctl.h:
+
+/usr/include/asm-generic/ioctls.h:
+
+../mav.cpp:
+
+/usr/include/asm/ioctls.h:
+
+/usr/include/bits/ioctls.h:
+
+/usr/include/sys/ioctl.h:
+
+/usr/include/net/if.h:
+
+../can/can.cpp:
+
+Gui_autogen/EWIEGA46WW/moc_mav.cpp:
+
 ../epaper/bcm2835/bcm2835.h:
 
 ../epaper/Config/Debug.h:
 
-/usr/include/qt/QtCore/qdatetime.h:
+/usr/include/bits/unistd_ext.h:
 
-../can/utils.cpp:
-
-../can/utils.h:
+/usr/include/bits/getopt_core.h:
 
 /usr/include/bits/types/__fpos64_t.h:
 
@@ -4095,10 +4151,6 @@ CMakeFiles/Gui.dir/serialport/serialport.cpp.o: ../serialport/serialport.cpp \
 
 /usr/include/c++/11.1.0/bits/locale_facets.tcc:
 
-../epaper/Config/DEV_Config.h:
-
-/usr/include/bits/types/mbstate_t.h:
-
 /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/ctype_inline.h:
 
 /usr/include/qt/QtCore/qshareddata.h:
@@ -4159,8 +4211,6 @@ CMakeFiles/Gui.dir/serialport/serialport.cpp.o: ../serialport/serialport.cpp \
 
 /usr/include/c++/11.1.0/chrono:
 
-Gui_autogen/EWIEGA46WW/moc_mav.cpp:
-
 ../mavlink/common/mavlink_msg_vfr_hud.h:
 
 /usr/include/sys/types.h:
@@ -4210,6 +4260,8 @@ Gui_autogen/EWIEGA46WW/moc_mav.cpp:
 ../mavlink/common/mavlink_msg_log_request_end.h:
 
 ../mavlink/common/mavlink_msg_estimator_status.h:
+
+/usr/include/qt/QtCore/qcborcommon.h:
 
 /usr/include/bits/types/error_t.h:
 
@@ -4335,19 +4387,13 @@ Gui_autogen/EWIEGA46WW/moc_mav.cpp:
 
 /usr/include/c++/11.1.0/ext/numeric_traits.h:
 
-../gui.hpp:
-
-/usr/include/c++/11.1.0/ratio:
-
 /usr/include/c++/11.1.0/debug/debug.h:
 
 ../mavlink/common/mavlink_msg_message_interval.h:
 
 /usr/include/bits/termios-baud.h:
 
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdbool.h:
-
-/usr/include/c++/11.1.0/iosfwd:
+/usr/include/qt/QtCore/qjsonvalue.h:
 
 /usr/include/c++/11.1.0/cstddef:
 
@@ -4447,6 +4493,10 @@ Gui_autogen/mocs_compilation.cpp:
 
 /usr/include/bits/types/struct_timespec.h:
 
+/usr/include/c++/11.1.0/ratio:
+
+../gui.hpp:
+
 /usr/include/c++/11.1.0/bits/functexcept.h:
 
 /usr/include/bits/environments.h:
@@ -4458,8 +4508,6 @@ Gui_autogen/mocs_compilation.cpp:
 ../epaper/GUI/GUI_BMPfile.c:
 
 /usr/include/c++/11.1.0/ext/concurrence.h:
-
-/usr/include/bits/getopt_core.h:
 
 /usr/include/c++/11.1.0/bits/stl_pair.h:
 
@@ -4524,12 +4572,6 @@ Gui_autogen/mocs_compilation.cpp:
 /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/cpu_defines.h:
 
 /usr/include/c++/11.1.0/array:
-
-/usr/include/qt/QtCore/qregularexpression.h:
-
-/usr/include/c++/11.1.0/bits/stl_function.h:
-
-/usr/include/linux/socket.h:
 
 /usr/include/c++/11.1.0/bits/shared_ptr_base.h:
 
@@ -4609,6 +4651,8 @@ Gui_autogen/mocs_compilation.cpp:
 
 /usr/include/qt/QtCore/qstringmatcher.h:
 
+../epaper/e-Paper/EPD_IT8951.h:
+
 /usr/include/c++/11.1.0/bits/locale_classes.h:
 
 /usr/include/c++/11.1.0/bits/localefwd.h:
@@ -4659,6 +4703,10 @@ Gui_autogen/mocs_compilation.cpp:
 
 /usr/include/qt/QtCore/qatomic.h:
 
+/usr/include/bits/ioctl-types.h:
+
+/usr/include/qt/QtCore/QDebug:
+
 /usr/include/bits/types/struct_timeval.h:
 
 ../mavlink/common/mavlink_msg_distance_sensor.h:
@@ -4689,6 +4737,8 @@ Gui_autogen/mocs_compilation.cpp:
 
 /usr/include/qt/QtCore/qlocale.h:
 
+/usr/include/qt/QtCore/qurl.h:
+
 /usr/include/sys/mman.h:
 
 /usr/include/c++/11.1.0/utility:
@@ -4702,6 +4752,8 @@ Gui_autogen/mocs_compilation.cpp:
 /usr/include/c++/11.1.0/bits/stl_numeric.h:
 
 /usr/include/c++/11.1.0/bits/stl_multimap.h:
+
+/usr/include/qt/QtCore/QJsonObject:
 
 /usr/include/c++/11.1.0/bits/std_function.h:
 
@@ -4732,6 +4784,8 @@ Gui_autogen/mocs_compilation.cpp:
 /usr/include/c++/11.1.0/bits/stl_list.h:
 
 /usr/include/bits/termios.h:
+
+/usr/include/qt/QtCore/quuid.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h:
 
@@ -4797,8 +4851,6 @@ Gui_autogen/mocs_compilation.cpp:
 
 /usr/include/qt/QtCore/qhash.h:
 
-/usr/include/asm/ioctl.h:
-
 /usr/include/qt/QtCore/qmap.h:
 
 /usr/include/c++/11.1.0/bits/istream.tcc:
@@ -4861,6 +4913,24 @@ Gui_autogen/mocs_compilation.cpp:
 
 ../gps/msgs/NMEA.hpp:
 
+Gui_autogen/EWIEGA46WW/moc_gui.cpp:
+
+/usr/include/qt/QtCore/qjsonobject.h:
+
+/usr/include/qt/QtCore/qcborvalue.h:
+
+/usr/include/bits/mathcalls.h:
+
+../can/utils.cpp:
+
+/usr/include/qt/QtCore/qdatetime.h:
+
+/usr/include/c++/11.1.0/bits/stl_function.h:
+
+/usr/include/linux/socket.h:
+
+/usr/include/qt/QtCore/qregularexpression.h:
+
 /usr/include/qt/QtCore/qtimer.h:
 
 /usr/include/qt/QtCore/qbasictimer.h:
@@ -4901,21 +4971,15 @@ Gui_autogen/mocs_compilation.cpp:
 
 /usr/include/math.h:
 
-../can/can.cpp:
-
 /usr/include/linux/stddef.h:
 
 /usr/include/bits/fp-logb.h:
-
-/usr/include/linux/ioctl.h:
 
 /usr/include/c++/11.1.0/iterator:
 
 /usr/include/limits.h:
 
 /usr/include/sys/socket.h:
-
-/usr/include/bits/mathcalls.h:
 
 /usr/include/c++/11.1.0/bits/shared_ptr_atomic.h:
 
@@ -4981,6 +5045,10 @@ Gui_autogen/mocs_compilation.cpp:
 
 ../mavlink/common/mavlink_msg_safety_set_allowed_area.h:
 
+Gui_autogen/YN6D6BICVT/moc_serialport.cpp:
+
+../mavlink/common/mavlink_msg_safety_allowed_area.h:
+
 ../mavlink/common/mavlink_msg_attitude_quaternion_cov.h:
 
 ../mavlink/common/mavlink_msg_nav_controller_output.h:
@@ -4994,10 +5062,6 @@ Gui_autogen/mocs_compilation.cpp:
 ../mavlink/common/mavlink_msg_data_stream.h:
 
 ../mavlink/common/mavlink_msg_manual_control.h:
-
-../mav.cpp:
-
-/usr/include/asm/ioctls.h:
 
 ../mavlink/common/mavlink_msg_rc_channels_override.h:
 
@@ -5071,6 +5135,10 @@ Gui_autogen/mocs_compilation.cpp:
 
 ../mavlink/common/mavlink_msg_control_system_state.h:
 
+/usr/include/bits/types/mbstate_t.h:
+
+../epaper/Config/DEV_Config.h:
+
 ../mavlink/common/mavlink_msg_gps_input.h:
 
 ../mavlink/common/mavlink_msg_high_latency.h:
@@ -5082,8 +5150,6 @@ Gui_autogen/mocs_compilation.cpp:
 ../mavlink/common/mavlink_msg_mission_item_int.h:
 
 ../mavlink/common/mavlink_msg_named_value_int.h:
-
-/usr/include/net/if.h:
 
 ../mavlink/common/mavlink_msg_mission_request_int.h:
 
@@ -5139,24 +5205,10 @@ Gui_autogen/mocs_compilation.cpp:
 
 /usr/include/asm-generic/socket.h:
 
-../mavlink/common/mavlink_msg_safety_allowed_area.h:
+/usr/include/c++/11.1.0/iosfwd:
 
-Gui_autogen/YN6D6BICVT/moc_serialport.cpp:
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdbool.h:
 
 /usr/include/unistd.h:
 
 /usr/include/bits/confname.h:
-
-/usr/include/bits/unistd_ext.h:
-
-/usr/include/sys/ioctl.h:
-
-/usr/include/bits/ioctls.h:
-
-/usr/include/asm-generic/ioctls.h:
-
-/usr/include/asm-generic/ioctl.h:
-
-/usr/include/qt/QtCore/QDebug:
-
-/usr/include/bits/ioctl-types.h:

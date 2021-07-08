@@ -335,10 +335,24 @@ CMakeFiles/Gui.dir/epaper/Fonts/font24CN.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Gui.dir/epaper/Fonts/font24CN.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mikolaj/Documents/Embeded-C/epaper/Fonts/font24CN.c -o CMakeFiles/Gui.dir/epaper/Fonts/font24CN.c.s
 
+CMakeFiles/Gui.dir/epaper/Fonts/font32.c.o: CMakeFiles/Gui.dir/flags.make
+CMakeFiles/Gui.dir/epaper/Fonts/font32.c.o: ../epaper/Fonts/font32.c
+CMakeFiles/Gui.dir/epaper/Fonts/font32.c.o: CMakeFiles/Gui.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/Gui.dir/epaper/Fonts/font32.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Gui.dir/epaper/Fonts/font32.c.o -MF CMakeFiles/Gui.dir/epaper/Fonts/font32.c.o.d -o CMakeFiles/Gui.dir/epaper/Fonts/font32.c.o -c /home/mikolaj/Documents/Embeded-C/epaper/Fonts/font32.c
+
+CMakeFiles/Gui.dir/epaper/Fonts/font32.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Gui.dir/epaper/Fonts/font32.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mikolaj/Documents/Embeded-C/epaper/Fonts/font32.c > CMakeFiles/Gui.dir/epaper/Fonts/font32.c.i
+
+CMakeFiles/Gui.dir/epaper/Fonts/font32.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Gui.dir/epaper/Fonts/font32.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mikolaj/Documents/Embeded-C/epaper/Fonts/font32.c -o CMakeFiles/Gui.dir/epaper/Fonts/font32.c.s
+
 CMakeFiles/Gui.dir/epaper/Config/DEV_Config.c.o: CMakeFiles/Gui.dir/flags.make
 CMakeFiles/Gui.dir/epaper/Config/DEV_Config.c.o: ../epaper/Config/DEV_Config.c
 CMakeFiles/Gui.dir/epaper/Config/DEV_Config.c.o: CMakeFiles/Gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/Gui.dir/epaper/Config/DEV_Config.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/Gui.dir/epaper/Config/DEV_Config.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Gui.dir/epaper/Config/DEV_Config.c.o -MF CMakeFiles/Gui.dir/epaper/Config/DEV_Config.c.o.d -o CMakeFiles/Gui.dir/epaper/Config/DEV_Config.c.o -c /home/mikolaj/Documents/Embeded-C/epaper/Config/DEV_Config.c
 
 CMakeFiles/Gui.dir/epaper/Config/DEV_Config.c.i: cmake_force
@@ -352,7 +366,7 @@ CMakeFiles/Gui.dir/epaper/Config/DEV_Config.c.s: cmake_force
 CMakeFiles/Gui.dir/epaper/bcm2835/bcm2835.c.o: CMakeFiles/Gui.dir/flags.make
 CMakeFiles/Gui.dir/epaper/bcm2835/bcm2835.c.o: ../epaper/bcm2835/bcm2835.c
 CMakeFiles/Gui.dir/epaper/bcm2835/bcm2835.c.o: CMakeFiles/Gui.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/Gui.dir/epaper/bcm2835/bcm2835.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/Gui.dir/epaper/bcm2835/bcm2835.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Gui.dir/epaper/bcm2835/bcm2835.c.o -MF CMakeFiles/Gui.dir/epaper/bcm2835/bcm2835.c.o.d -o CMakeFiles/Gui.dir/epaper/bcm2835/bcm2835.c.o -c /home/mikolaj/Documents/Embeded-C/epaper/bcm2835/bcm2835.c
 
 CMakeFiles/Gui.dir/epaper/bcm2835/bcm2835.c.i: cmake_force
@@ -384,6 +398,7 @@ Gui_OBJECTS = \
 "CMakeFiles/Gui.dir/epaper/Fonts/font20.c.o" \
 "CMakeFiles/Gui.dir/epaper/Fonts/font24.c.o" \
 "CMakeFiles/Gui.dir/epaper/Fonts/font24CN.c.o" \
+"CMakeFiles/Gui.dir/epaper/Fonts/font32.c.o" \
 "CMakeFiles/Gui.dir/epaper/Config/DEV_Config.c.o" \
 "CMakeFiles/Gui.dir/epaper/bcm2835/bcm2835.c.o"
 
@@ -409,6 +424,7 @@ Gui: CMakeFiles/Gui.dir/epaper/Fonts/font16.c.o
 Gui: CMakeFiles/Gui.dir/epaper/Fonts/font20.c.o
 Gui: CMakeFiles/Gui.dir/epaper/Fonts/font24.c.o
 Gui: CMakeFiles/Gui.dir/epaper/Fonts/font24CN.c.o
+Gui: CMakeFiles/Gui.dir/epaper/Fonts/font32.c.o
 Gui: CMakeFiles/Gui.dir/epaper/Config/DEV_Config.c.o
 Gui: CMakeFiles/Gui.dir/epaper/bcm2835/bcm2835.c.o
 Gui: CMakeFiles/Gui.dir/build.make
@@ -416,7 +432,7 @@ Gui: /usr/lib/libQt5Widgets.so.5.15.2
 Gui: /usr/lib/libQt5Gui.so.5.15.2
 Gui: /usr/lib/libQt5Core.so.5.15.2
 Gui: CMakeFiles/Gui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking CXX executable Gui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mikolaj/Documents/Embeded-C/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable Gui"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Gui.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

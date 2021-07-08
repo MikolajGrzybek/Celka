@@ -443,6 +443,7 @@ CMakeFiles/Gui.dir/gui.cpp.o: /home/mikolaj/Documents/Embeded-C/gui.cpp \
  /home/mikolaj/Documents/Embeded-C/can/sbt_can_msg.h \
  /usr/include/c++/11.1.0/cinttypes /usr/include/inttypes.h \
  /home/mikolaj/Documents/Embeded-C/can/utils.h \
+ /home/mikolaj/Documents/Embeded-C/epaper/Fonts/fonts.h \
  /home/mikolaj/Documents/Embeded-C/epaper/GUI/GUI_Paint.h \
  /home/mikolaj/Documents/Embeded-C/epaper/GUI/../Config/DEV_Config.h \
  /home/mikolaj/Documents/Embeded-C/epaper/GUI/../Fonts/fonts.h \
