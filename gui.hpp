@@ -96,5 +96,6 @@ void InitGui();
 
 UBYTE Dynamic_Refresh(UWORD width, UWORD height, UWORD start_x, UWORD start_y);
 
+UBYTE Dynamic_Refresh_Example(IT8951_Dev_Info Dev_Info, UDOUBLE Init_Target_Memory_Addr);
 
 #endif // GUI_HPP

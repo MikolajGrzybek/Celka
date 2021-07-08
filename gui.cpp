@@ -36,6 +36,8 @@ static const double DEG2RAD = (180.0 / PI);
 UBYTE *Refresh_Frame_Buf = NULL;
 UBYTE *Panel_Frame_Buf = NULL;
 UBYTE *Panel_Area_Frame_Buf = NULL;
+UDOUBLE Init_Target_Memory_Addr;
+IT8951_Dev_Info Dev_Info;
 
 bool Four_Byte_Align = false;
 
@@ -59,7 +61,9 @@ Gui::Gui()
 
     InitGui();
 
-    Dynamic_Refresh(300, 200, 500, 500);
+
+    Dynamic_Refresh_Example(Dev_Info, Init_Target_Memory_Addr);
+    //Dynamic_Refresh(300, 200, 500, 500);
 }
 
 
@@ -359,10 +363,8 @@ void InitGui(){
     A2_Mode = 6;
     Four_Byte_Align = true;
 
-    IT8951_Dev_Info Dev_Info;
     UWORD Panel_Width;
     UWORD Panel_Height;
-    UDOUBLE Init_Target_Memory_Addr;
     	
     //Init the BCM2835 Device
     if(DEV_Module_Init()!=0){
@@ -446,4 +448,89 @@ UBYTE Dynamic_Refresh(UWORD width, UWORD height, UWORD start_x, UWORD start_y){
 
     return 0;
 
+}
+
+UBYTE Dynamic_Refresh_Example(IT8951_Dev_Info Dev_Info, UDOUBLE Init_Target_Memory_Addr){
+    UWORD Panel_Width = Dev_Info.Panel_W;
+    UWORD Panel_Height = Dev_Info.Panel_H;
+
+    UWORD Dynamic_Area_Width = 96;
+    UWORD Dynamic_Area_Height = 48;
+
+    UDOUBLE Imagesize;
+
+    UWORD Start_X = 0,Start_Y = 0;
+
+    UWORD Dynamic_Area_Count = 0;
+
+    UWORD Repeat_Area_Times = 0;
+
+    //malloc enough memory for 1bp picture first
+    Imagesize = ((Panel_Width * 1 % 8 == 0)? (Panel_Width * 1 / 8 ): (Panel_Width * 1 / 8 + 1)) * Panel_Height;
+    if((Refresh_Frame_Buf = (UBYTE *)malloc(Imagesize)) == NULL){
+        Debug("Failed to apply for picture memory...\r\n");
+        return -1;
+    }
+
+    clock_t Dynamic_Area_Start, Dynamic_Area_Finish;
+    double Dynamic_Area_Duration;  
+
+    while(1)
+    {
+        Dynamic_Area_Width = 128;
+        Dynamic_Area_Height = 96;
+
+        Start_X = 0;
+        Start_Y = 0;
+
+        Dynamic_Area_Count = 0;
+
+        Dynamic_Area_Start = clock();
+        Debug("Start to dynamic display...\r\n");
+
+        for(Dynamic_Area_Width = 96, Dynamic_Area_Height = 64; (Dynamic_Area_Width < Panel_Width - 32) && (Dynamic_Area_Height < Panel_Height - 24); Dynamic_Area_Width += 32, Dynamic_Area_Height += 24)
+        {
+
+            Imagesize = ((Dynamic_Area_Width % 8 == 0)? (Dynamic_Area_Width / 8 ): (Dynamic_Area_Width / 8 + 1)) * Dynamic_Area_Height;
+            Paint_NewImage(Refresh_Frame_Buf, Dynamic_Area_Width, Dynamic_Area_Height, 0, BLACK);
+            Paint_SelectImage(Refresh_Frame_Buf);
+			Epd_Mode(0);
+            Paint_SetBitsPerPixel(1);
+
+           for(int y=Start_Y; y< Panel_Height - Dynamic_Area_Height; y += Dynamic_Area_Height)
+            {
+                for(int x=Start_X; x< Panel_Width - Dynamic_Area_Width; x += Dynamic_Area_Width)
+                {
+                    Paint_Clear(WHITE);
+
+                    //For color definition of all BitsPerPixel, you can refer to GUI_Paint.h
+                    Paint_DrawRectangle(0, 0, Dynamic_Area_Width-1, Dynamic_Area_Height, 0x00, DOT_PIXEL_2X2, DRAW_FILL_EMPTY);
+
+                    Paint_DrawCircle(Dynamic_Area_Width*3/4, Dynamic_Area_Height*3/4, 5, 0x00, DOT_PIXEL_1X1, DRAW_FILL_FULL);
+
+                    Paint_DrawNum(Dynamic_Area_Width/4, Dynamic_Area_Height/4, ++Dynamic_Area_Count, &Font20, 0x00, 0xF0);
+
+					
+					EPD_IT8951_1bp_Refresh(Refresh_Frame_Buf, x, y, Dynamic_Area_Width,  Dynamic_Area_Height, A2_Mode, Init_Target_Memory_Addr, true);
+                }
+            }
+            Start_X += 32;
+            Start_Y += 24;
+        }
+
+        Dynamic_Area_Finish = clock();
+        Dynamic_Area_Duration = (double)(Dynamic_Area_Finish - Dynamic_Area_Start) / CLOCKS_PER_SEC;
+        Debug( "Write and Show occupy %f second\n", Dynamic_Area_Duration );
+
+        Repeat_Area_Times ++;
+        if(Repeat_Area_Times > 0){
+            break;
+        }
+    }
+    if(Refresh_Frame_Buf != NULL){
+        free(Refresh_Frame_Buf);
+        Refresh_Frame_Buf = NULL;
+    }
+
+    return 0;
 }
