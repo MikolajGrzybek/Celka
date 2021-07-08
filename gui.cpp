@@ -475,53 +475,44 @@ UBYTE Dynamic_Refresh_Example(IT8951_Dev_Info Dev_Info, UDOUBLE Init_Target_Memo
     clock_t Dynamic_Area_Start, Dynamic_Area_Finish;
     double Dynamic_Area_Duration;  
 
-    while(1)
-    {
-        Dynamic_Area_Width = 400;
-        Dynamic_Area_Height = 200;
 
-        Start_X = 500;
-        Start_Y = 200;
+        Dynamic_Area_Width = 100;
+        Dynamic_Area_Height = 50;
 
         Dynamic_Area_Count = 0;
 
         Dynamic_Area_Start = clock();
         Debug("Start to dynamic display...\r\n");
 
-        for(Dynamic_Area_Width = 400, Dynamic_Area_Height = 200; (Dynamic_Area_Width < Panel_Width - 32) && (Dynamic_Area_Height < Panel_Height - 24); Dynamic_Area_Width += 32, Dynamic_Area_Height += 24)
-        {
 
-            Imagesize = ((Dynamic_Area_Width % 8 == 0)? (Dynamic_Area_Width / 8 ): (Dynamic_Area_Width / 8 + 1)) * Dynamic_Area_Height;
-            Paint_NewImage(Refresh_Frame_Buf, Dynamic_Area_Width, Dynamic_Area_Height, 0, BLACK);
-            Paint_SelectImage(Refresh_Frame_Buf);
-			Epd_Mode(0);
-            Paint_SetBitsPerPixel(1);
+       // Imagesize = ((Dynamic_Area_Width % 8 == 0)? (Dynamic_Area_Width / 8 ): (Dynamic_Area_Width / 8 + 1)) * Dynamic_Area_Height;
+        Paint_NewImage(Refresh_Frame_Buf, Dynamic_Area_Width, Dynamic_Area_Height, 0, BLACK);
+        Paint_SelectImage(Refresh_Frame_Buf);
+        Epd_Mode(0);
+        Paint_SetBitsPerPixel(1);
 
 
-            Paint_Clear(WHITE);
+        Paint_Clear(WHITE);
 
-            for(int x = 0; x++; x >= 9999){
+        for(int x = 0; x++; x >= 9999){
             Paint_DrawNum(165, 25, x, &Font24, 0x00, 0xFF);
 
             Paint_DrawNum(650, 25, x, &Font24, 0x00, 0xFF);
-					
+                      
             Paint_DrawNum(1182, 25, x, &Font24, 0x00, 0xFF);
-            }
-    		EPD_IT8951_1bp_Refresh(Refresh_Frame_Buf, 500, 500, Dynamic_Area_Width,  Dynamic_Area_Height, A2_Mode, Init_Target_Memory_Addr, true);
+            
+ 		    EPD_IT8951_1bp_Refresh(Refresh_Frame_Buf, 165, 25, Dynamic_Area_Width,  Dynamic_Area_Height, A2_Mode, Init_Target_Memory_Addr, true);
+  		    EPD_IT8951_1bp_Refresh(Refresh_Frame_Buf, 650, 25, Dynamic_Area_Width,  Dynamic_Area_Height, A2_Mode, Init_Target_Memory_Addr, true);
+ 		    EPD_IT8951_1bp_Refresh(Refresh_Frame_Buf, 1182, 25, Dynamic_Area_Width,  Dynamic_Area_Height, A2_Mode, Init_Target_Memory_Addr, true);
 
-            Start_X += 32;
-            Start_Y += 24;
         }
+    
 
         Dynamic_Area_Finish = clock();
         Dynamic_Area_Duration = (double)(Dynamic_Area_Finish - Dynamic_Area_Start) / CLOCKS_PER_SEC;
         Debug( "Write and Show occupy %f second\n", Dynamic_Area_Duration );
 
-        Repeat_Area_Times ++;
-        if(Repeat_Area_Times > 0){
-            break;
-        }
-    }
+
     if(Refresh_Frame_Buf != NULL){
         free(Refresh_Frame_Buf);
         Refresh_Frame_Buf = NULL;
