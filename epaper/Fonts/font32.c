@@ -2384,7 +2384,7 @@ const uint8_t Font32_Table [] =
 // Gotta think about it 
 sFONT Font32 = {
   Font32_Table,
-  17, /* Width */
+  16, /* Width */
   24, /* Height */
 };
  

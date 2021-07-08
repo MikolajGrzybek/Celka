@@ -52,6 +52,7 @@ set(PROJECT_SOURCES
     epaper/Fonts/font20.c
     epaper/Fonts/font24.c
     epaper/Fonts/font24CN.c
+    epaper/Fonts/font32.c
     epaper/Fonts/fonts.h
     epaper/Config/Debug.h
     epaper/Config/DEV_Config.c
