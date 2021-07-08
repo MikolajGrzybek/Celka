@@ -500,8 +500,13 @@ UBYTE Dynamic_Refresh_Example(IT8951_Dev_Info Dev_Info, UDOUBLE Init_Target_Memo
 
             Paint_Clear(WHITE);
 
-            Paint_DrawNum(500, 500, 9999, &Font24, 0x00, 0xFF)
+            for(int x = 0; x++; x >= 9999){
+            Paint_DrawNum(165, 25, x, &Font24, 0x00, 0xFF);
+
+            Paint_DrawNum(650, 25, x, &Font24, 0x00, 0xFF);
 					
+            Paint_DrawNum(1182, 25, x, &Font24, 0x00, 0xFF);
+            }
     		EPD_IT8951_1bp_Refresh(Refresh_Frame_Buf, 500, 500, Dynamic_Area_Width,  Dynamic_Area_Height, A2_Mode, Init_Target_Memory_Addr, true);
 
             Start_X += 32;
