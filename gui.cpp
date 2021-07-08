@@ -477,18 +477,18 @@ UBYTE Dynamic_Refresh_Example(IT8951_Dev_Info Dev_Info, UDOUBLE Init_Target_Memo
 
     while(1)
     {
-        Dynamic_Area_Width = 128;
-        Dynamic_Area_Height = 96;
+        Dynamic_Area_Width = 400;
+        Dynamic_Area_Height = 200;
 
-        Start_X = 0;
-        Start_Y = 0;
+        Start_X = 500;
+        Start_Y = 200;
 
         Dynamic_Area_Count = 0;
 
         Dynamic_Area_Start = clock();
         Debug("Start to dynamic display...\r\n");
 
-        for(Dynamic_Area_Width = 96, Dynamic_Area_Height = 64; (Dynamic_Area_Width < Panel_Width - 32) && (Dynamic_Area_Height < Panel_Height - 24); Dynamic_Area_Width += 32, Dynamic_Area_Height += 24)
+        for(Dynamic_Area_Width = 400, Dynamic_Area_Height = 200; (Dynamic_Area_Width < Panel_Width - 32) && (Dynamic_Area_Height < Panel_Height - 24); Dynamic_Area_Width += 32, Dynamic_Area_Height += 24)
         {
 
             Imagesize = ((Dynamic_Area_Width % 8 == 0)? (Dynamic_Area_Width / 8 ): (Dynamic_Area_Width / 8 + 1)) * Dynamic_Area_Height;
@@ -508,7 +508,7 @@ UBYTE Dynamic_Refresh_Example(IT8951_Dev_Info Dev_Info, UDOUBLE Init_Target_Memo
             Paint_DrawNum(Dynamic_Area_Width/4, Dynamic_Area_Height/4, ++Dynamic_Area_Count, &Font20, 0x00, 0xF0);
 
 					
-    		PD_IT8951_1bp_Refresh(Refresh_Frame_Buf, x, y, Dynamic_Area_Width,  Dynamic_Area_Height, A2_Mode, Init_Target_Memory_Addr, true);
+    		EPD_IT8951_1bp_Refresh(Refresh_Frame_Buf, 500, 500, Dynamic_Area_Width,  Dynamic_Area_Height, A2_Mode, Init_Target_Memory_Addr, true);
 
             Start_X += 32;
             Start_Y += 24;
